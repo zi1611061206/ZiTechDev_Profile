@@ -20,6 +20,10 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/my-styles.css" rel="stylesheet" />
+    <!-- Css Libraries -->
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -44,52 +48,52 @@
             <ul class="navbar-nav text-start px-2">
                 <li class="nav-item active mb-1">
                     <a class="nav-link js-scroll-trigger" href="#introduce">
-                        <span class="fa fa-home"></span> Giới thiệu
+                        Giới thiệu<span class="fa fa-home float-end"></span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#career-goals">
-                        <span class="fa fa-bullseye"></span> Mục tiêu
+                        Mục tiêu<span class="fa fa-bullseye float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#education">
-                        <span class="fa fa-school"></span> Học vấn
+                        Học vấn<span class="fa fa-school float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#advanced-skills">
-                        <span class="fa fa-laptop-code"></span> Chuyên môn
+                        Chuyên môn<span class="fa fa-laptop-code float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#soft-skills">
-                        <span class="fa fa-compass"></span> Kỹ năng mềm
+                        Kỹ năng mềm<span class="fa fa-compass float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#professional-experiences">
-                        <span class="fa fa-user-tie"></span> Kinh nghiệm
+                        Kinh nghiệm<span class="fa fa-user-tie float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item" hidden>
                     <a class="nav-link js-scroll-trigger" href="#other-experiences">
-                        <span class="fa fa-tasks"></span> Kinh nghiệm khác
+                        Kinh nghiệm khác<span class="fa fa-tasks float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item" hidden>
                     <a class="nav-link js-scroll-trigger" href="#reference-person">
-                        <span class="fa fa-people-arrows"></span> Người tham chiếu
+                        Người tham chiếu<span class="fa fa-people-arrows float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#projects">
-                        <span class="fa fa-code"></span> Dự án
+                        Dự án<span class="fa fa-code float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">
-                        <span class="fa fa-id-card"></span> Liên hệ
+                        Liên hệ<span class="fa fa-id-card float-end"></span> 
                     </a>
                 </li>
             </ul>
@@ -103,7 +107,7 @@
         <section id="introduce">
             <div class="resume-section-content">
                 <!-- Carousel -->
-                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="500000">
+                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -156,11 +160,19 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="zi-slide">
+                            <div class="zi-slide bg-dark">
                                 <div class="row h-100">
-                                    <div class="col-2"></div>
+                                    <div class="col-4"></div>
+                                    <div class="zi-quote">
+                                        <div class="content-inner">
+                                            <div class="typed-text" hidden>
+                                                "Nếu cứ đứng mãi trên vai người khổng lồ. Khi người khổng lồ chết ta vẫn là kẻ tí hon! Sao không tự mình làm người khổng lồ? Khó nhưng chưa chắc là không thể."
+                                            </div>
+                                            <h2 class="show-text mt-5"></h2>
+                                        </div>
+                                        <h4 class="d-block text-end position-absolute bottom-0">- ZiTechDev -</h4>
+                                    </div>
                                     <div class="col-8"></div>
-                                    <div class="col-2"></div>
                                 </div>
                             </div>
                         </div>
@@ -200,8 +212,8 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Experience-->
-        <section class="resume-section" id="experience">
+        <!-- career-goals-->
+        <section class="resume-section" id="career-goals">
             <div class="resume-section-content">
                 <h2 class="mb-5">Experience</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -250,7 +262,7 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Education-->
+        <!-- education-->
         <section class="resume-section" id="education">
             <div class="resume-section-content">
                 <h2 class="mb-5">Education</h2>
@@ -274,8 +286,8 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
+        <!-- advanced-skills-->
+        <section class="resume-section" id="advanced-skills">
             <div class="resume-section-content">
                 <h2 class="mb-5">Skills</h2>
                 <div class="subheading mb-3">Programming Languages & Tools</div>
@@ -315,8 +327,8 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
+        <!-- soft-skills-->
+        <section class="resume-section" id="soft-skills">
             <div class="resume-section-content">
                 <h2 class="mb-5">Interests</h2>
                 <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid
@@ -328,8 +340,100 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Awards-->
-        <section class="resume-section" id="awards">
+        <!-- professional-experiences-->
+        <section class="resume-section" id="professional-experiences">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards & Certifications</h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Google Analytics Certified Developer
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Mobile Web Specialist - Google Certification
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        1
+                        <sup>st</sup>
+                        Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        1
+                        <sup>st</sup>
+                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        2
+                        <sup>nd</sup>
+                        Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        1
+                        <sup>st</sup>
+                        Place - James Buchanan High School - Hackathon 2006
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        3
+                        <sup>rd</sup>
+                        Place - James Buchanan High School - Hackathon 2005
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- projects-->
+        <section class="resume-section" id="projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards & Certifications</h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Google Analytics Certified Developer
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Mobile Web Specialist - Google Certification
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        1
+                        <sup>st</sup>
+                        Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        1
+                        <sup>st</sup>
+                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        2
+                        <sup>nd</sup>
+                        Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        1
+                        <sup>st</sup>
+                        Place - James Buchanan High School - Hackathon 2006
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        3
+                        <sup>rd</sup>
+                        Place - James Buchanan High School - Hackathon 2005
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- contact-->
+        <section class="resume-section" id="contact">
             <div class="resume-section-content">
                 <h2 class="mb-5">Awards & Certifications</h2>
                 <ul class="fa-ul mb-0">
@@ -386,6 +490,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <!-- Bootstrap core JS (Toggler button) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="js/my-scripts.js"></script>
