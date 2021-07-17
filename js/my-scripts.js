@@ -9,77 +9,52 @@
     
     // Hoạt ảnh gõ tự động
     if ($('.content-inner .show-text').length == 1) {
-        var typed_strings = $('.content-inner .typed-text').text();
+        var typed_strings = $('.content-inner .typed-text').text() + '^1000'; // Dừng 1s rồi gõ phần tử tiếp theo (nếu có)
         var typed = new Typed('.content-inner .show-text', {
-            strings: typed_strings.split(', '),
-            typeSpeed: 50,
-            backSpeed: 10,
-            smartBackspace: true,
-            loop: true
+            strings: typed_strings.split(', '), // Nội dung gõ
+            typeSpeed: 50, // Tốc độ gõ (ms)
+            backSpeed: 10, // Tốc độ xóa (ms)
+            startDelay: 0, // Độ trễ trước khi bắt đầu gõ (ms)
+            shuffle: false, // Không cho phép thay đổi thứ tự gõ strings
+            smartBackspace: false, // Chế độ xóa có chọn lọc
+            backDelay: 1000, // Thời gian chờ khi xóa (ms)
+            fadeOut: false, // Làm mờ thay vì xóa lùi
+            fadeOutClass: 'typed-fade-out', // Chỉ định lớp css cho hoạt ảnh mờ dần
+            fadeOutDelay: 500, // Độ trễ làm mờ (ms)
+            loop: true, // Bật vòng lặp strings
+            loopCount: Infinity, // Số vòng lặp (Infinity - vô cực)
+            showCursor: true, // Hiển thị con trỏ
+            cursorChar: '|', // Ký tự đại diện con trỏ
+            autoInsertCss: true, // Tự động chèn CSS cho con trỏ và fadeOut vào HTML <head>
+            attr: null, // Thuộc tính để gõ (ex: placeholder, value, HTML text)
+            bindInputFocusEvents: false, // Liên kết với tiêu điểm và làm mờ nếu el là đầu vào văn bản
+            contentType: 'html', // contentType 'html' hoặc 'null' cho chuỗi trần
+            onBegin: (self) => {}, // Hàm sự kiện trước khi bắt đầu gõ
+            onComplete: (self) => {}, // Hàm sự kiện khi gõ hoàn tất
+            preStringTyped: (arrayPos, self) => {}, // Hàm sự kiện trước mỗi phần tử được gõ
+            onStringTyped: (arrayPos, self) => {}, // Hàm sự kiện sau mỗi phần tử được gõ
+            onLastStringBackspaced: (self) => {}, // Hàm sự kiện sau phần tử cuối cùng được gõ
+            onTypingPaused: (arrayPos, self) => {}, // Hàm sự kiện tạm dừng gõ
+            onTypingResumed: (arrayPos, self) => {}, // Hàm sự kiện tiếp tục gõ
+            onReset: (self) => {}, // Hàm sự kiện sau khi reset
+            onStop: (arrayPos, self) => {}, // Hàm sự kiện sau khi dừng gõ
+            onStart: (arrayPos, self) => {}, // Hàm sự kiện sau khi bắt đầu
+            onDestroy: (self) => {} // Hàm sự kiện sau khi hủy
         });
     }
-    
-    // // Làm mượt hiệu ứng cuộn khi chọn mục ở thanh bên
-    // $(".navbar-nav a").on('click', function (event) {
-    //     if (this.hash !== "") {
-    //         event.preventDefault();
-            
-    //         $('html, body').animate({
-    //             scrollTop: $(this.hash).offset().top - 30
-    //         }, 1500, 'easeInOutExpo');
-            
-    //         if ($(this).parents('.navbar-nav').length) {
-    //             $('.navbar-nav .active').removeClass('active');
-    //             $(this).closest('a').addClass('active');
-    //         }
-    //     }
-    // });
-    
-    
-    // // Hoạt ảnh thanh tiến trình kinh nghiệm
-    // $('.skills').waypoint(function () {
-    //     $('.progress .progress-bar').each(function () {
-    //         $(this).css("width", $(this).attr("aria-valuenow") + '%');
-    //     });
-    // }, {offset: '80%'});
-    
-    
-    // // Porfolio isotope and filter
-    // var portfolioIsotope = $('.portfolio-container').isotope({
-    //     itemSelector: '.portfolio-item',
-    //     layoutMode: 'fitRows'
-    // });
-
-    // $('#portfolio-flters li').on('click', function () {
-    //     $("#portfolio-flters li").removeClass('filter-active');
-    //     $(this).addClass('filter-active');
-
-    //     portfolioIsotope.isotope({filter: $(this).data('filter')});
-    // });
-    
-    
-    // // Review slider
-    // $('.review-slider').slick({
-    //     autoplay: true,
-    //     dots: false,
-    //     infinite: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1
-    // });
-    
-    
-    // // Nút lên đầu trang
-    // $(window).scroll(function () {
-    //     if ($(this).scrollTop() > 100) {
-    //         $('.back-to-top').fadeIn('slow');
-    //     } else {
-    //         $('.back-to-top').fadeOut('slow');
-    //     }
-    // });
-    // $('.back-to-top').click(function () {
-    //     $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-    //     return false;
-    // });
 
 })(jQuery);
+
+$(function(){
+    $('#myCarousel.slide').carousel({
+        interval: 5000,
+        pause: "hover"
+    });
+
+    $('.zi-slide').hover(function(){
+       $("#myCarousel").carousel('pause');
+    }).blur(function() {
+       $("#myCarousel").carousel('cycle');
+    });
+});
 

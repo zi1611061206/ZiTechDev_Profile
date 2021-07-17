@@ -10,5 +10,9 @@
             "type": "pwa-chrome",
             "url": "${workspaceFolder}/index.html"
         }
+    ],
+    "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
     ]
 }
