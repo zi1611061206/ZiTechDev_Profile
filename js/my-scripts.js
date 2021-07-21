@@ -45,6 +45,7 @@
 
 })(jQuery);
 
+// Dừng chuyển slide khi mouse hover
 $(function(){
     $('#myCarousel.slide').carousel({
         interval: 5000,
@@ -56,5 +57,11 @@ $(function(){
     }).blur(function() {
        $("#myCarousel").carousel('cycle');
     });
+});
+
+// Hiệu ứng card 3D
+VanillaTilt.init(document.querySelectorAll(".card-3"), {
+    max: 25,
+    speed: 400
 });
 

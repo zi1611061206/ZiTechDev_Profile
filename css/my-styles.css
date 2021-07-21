@@ -1,3 +1,26 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #09161d;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
 .zi-logo-sm {
     vertical-align: middle;
     width: 30px;
@@ -5,10 +28,16 @@
     border-radius: 50%;
 }
 
+.zi-logo-square {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+}
+
 .zi-slide{
     width: 100%;
     height: 700px;
-    background-color: black;
+    background-color: #09161d;
     color: white;
     opacity: 80%;
 }
@@ -64,7 +93,7 @@
     bottom: 15%;
     left: 15%;
     right: 15%;
-    background-color: #9ACD32;
+    background-color: #122936;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 10px 5px 5px #000000;
     -ms-transform: rotate(-10deg); /* IE 9 */
@@ -130,4 +159,375 @@
   to {
       transform: scale(1, 1);
   }
+}
+
+/* Text Card */
+.zi-card-text-horizontal
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #122936;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 10px 10px 5px 5px #000000;
+}
+
+.zi-card-text-horizontal::before
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2196f3;
+    clip-path: circle(150px at 20% -20%);
+    transition: 0.5s ease-in-out;
+}
+
+.zi-card-text-horizontal:hover::before
+{
+    clip-path: circle(250px at 20% -50%);
+}
+
+.zi-card-text-horizontal::after
+{
+    content: 'ZITECHDEV';
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    font-weight: 800;
+    font-size: 6em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.zi-card-text-horizontal .zi-title
+{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+.zi-card-text-horizontal:hover .zi-title
+{
+  top: 10%;
+  left: 10px;
+  transition: 0.5s;
+}
+
+.zi-card-text-horizontal .zi-content
+{
+    position: relative;
+    padding: 10px;
+    margin-top: 60px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.zi-card-text-horizontal:hover .zi-content
+{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+/* Progress Bar */
+.card-2
+{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    background: linear-gradient(#445d6b 0%, #2a5066 10%, #122936);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #000;
+    transition: 0.5s;
+}
+
+.card-2::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 10;
+}
+
+.card-2:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+}
+
+.card-2 .text-2
+{
+    position: relative;
+    width: 80px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.card-2 .value-2
+{
+    position: relative;
+    width: 20px;
+    text-align: left;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.card-2 .percent-2
+{
+    position: relative;
+    width: calc(100% - 160px);
+    height: 15px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+
+.card-2 .percent-2 .progress-2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 10px; 
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate2 2s ease-in-out forwards;
+}
+
+@keyframes animate2
+{
+    from
+    {
+        width: 0;
+    }
+}
+
+.zi-programing-language .card-2:nth-child(1) .percent-2 .progress-2
+{
+    width: 85%;
+    background: linear-gradient(45deg, #2196f3, #673ab7);
+}
+
+.zi-programing-language .card-2:nth-child(2) .percent-2 .progress-2
+{
+    width: 85%;
+    background: linear-gradient(45deg, #2196f3, #673ab7);
+}
+
+.zi-programing-language .card-2:nth-child(3) .percent-2 .progress-2
+{
+    width: 50%;
+    background: linear-gradient(45deg, #2196f3, #673ab7);
+}
+
+.zi-programing-language .card-2:nth-child(4) .percent-2 .progress-2
+{
+    width: 70%;
+    background: linear-gradient(45deg, #2196f3, #673ab7);
+}
+
+.zi-programing-language .card-2:nth-child(5) .percent-2 .progress-2
+{
+    width: 50%;
+    background: linear-gradient(45deg, #2196f3, #673ab7);
+}
+
+.zi-programing-language .card-2:nth-child(6) .percent-2 .progress-2
+{
+    width: 50%;
+    background: linear-gradient(45deg, #2196f3, #673ab7);
+}
+
+.zi-programing-language .card-2:nth-child(7) .percent-2 .progress-2
+{
+    width: 80%;
+    background: linear-gradient(45deg, #2196f3, #673ab7);
+}
+
+.zi-programing-language .card-2:nth-child(8) .percent-2 .progress-2
+{
+    width: 75%;
+    background: linear-gradient(45deg, #2196f3, #673ab7);
+}
+
+/* Card 3D */
+.card-3
+{
+    position: relative;
+    width: 220px;
+    height: 300px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: visible;
+    margin: 20px;
+    box-shadow: 10px 10px 5px 5px #000000;
+    transform-style: preserve-3d;
+}
+
+.card-3::before
+{
+    content: 'ZITECH';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 3em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    writing-mode: vertical-rl; 
+    opacity: 0;
+}
+
+.card-3::after
+{
+    content: 'DEV';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    writing-mode: vertical-rl; 
+    opacity: 0;
+    transform: 0.5s;
+}
+
+.card-3:hover::before,
+.card-3:hover::after
+{
+    opacity: 0.04;
+}
+
+.card-3 .price-3
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.card-3:hover .price-3
+{
+    top: 20px;
+    opacity: 1;
+}
+
+.card-3 .name-3,
+.card-3 .description-3
+{
+    position: absolute;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-3 .name-3
+{
+    text-transform: uppercase;
+    top: 80%;
+}
+
+.card-3 .description-3
+{
+    top: 72%;
+}
+
+.card-3:hover .name-3,
+.card-3:hover .description-3
+{
+    opacity: 0;
+    visibility: visible;
+}
+
+.card-3 .button-3
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: #fff;
+    background: #2196f3;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.card-3:hover .button-3
+{
+    bottom: 30px;
+    opacity: 1;
+}
+
+.card-3 .circle-3
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: lightslategrey;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+    z-index: 10;
+    opacity: 1;
+}
+
+.card-3:hover .circle-3
+{
+    top: 60%;
+}
+
+.card-3 .img-3
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    max-width: 120px;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,100px) rotate(-10deg);
+    transition: 0.5s;
+    z-index: 11;
+}
+
+.card-3:hover .img-3
+{
+    top: 60%;
+    transform: translate3d(-50%,-50%,100px) rotate(15deg);
 }
