@@ -25,7 +25,7 @@ svg circle:nth-child(2)
     stroke-dashoffset: 440;
 }
 
-.card-1:nth-child(1) svg circle:nth-child(2)
+.bar-1:nth-child(1) svg circle:nth-child(2)
 {
     stroke: #2196f3;
     background: linear-gradient(45deg, #2196f3, #673ab7);
@@ -41,7 +41,7 @@ svg circle:nth-child(2)
     }
 }
 
-.card-1
+.bar-1
 {
     position: relative;
     width: 250px;
@@ -56,7 +56,7 @@ svg circle:nth-child(2)
     transition: 0.5s;
 }
 
-.card-1::before
+.bar-1::before
 {
     content: '';
     position: absolute;
@@ -69,13 +69,13 @@ svg circle:nth-child(2)
     z-index: 1;
 }
 
-.card-1:hover
+.bar-1:hover
 {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
 }
 
-.card-1 .percent-1
+.bar-1 .percent-1
 {
     position: relative;
     width: 150px;
@@ -86,7 +86,7 @@ svg circle:nth-child(2)
     z-index: 1000;
 }
 
-.card-1 .percent-1 .value-1
+.bar-1 .percent-1 .value-1
 {
     position: absolute;
     top: 0;
@@ -99,7 +99,7 @@ svg circle:nth-child(2)
     border-radius: 50%;
 }
 
-.card-1 .percent-1 .value-1 h2
+.bar-1 .percent-1 .value-1 h2
 {
     color: #777;
     font-weight: 700;
@@ -107,25 +107,25 @@ svg circle:nth-child(2)
     transition: 0.5s;
 }
 
-.card-1:hover .percent-1 .value-1 h2
+.bar-1:hover .percent-1 .value-1 h2
 {
     color: #fff;
     font-size: 50px;
 }
 
-.card-1 .percent-1 .value-1 span
+.bar-1 .percent-1 .value-1 span
 {
     font-size: 24px;
     color: #777;
     transition: 0.5s;
 }
 
-.card-1:hover .percent-1 .value-1 span
+.bar-1:hover .percent-1 .value-1 span
 {
     color: #fff;
 }
 
-.card-1 .text-1
+.bar-1 .text-1
 {
     position: relative;
     color: #777;
@@ -136,13 +136,13 @@ svg circle:nth-child(2)
     transition: 0.5s;
 }
 
-.card-1:hover .text-1
+.bar-1:hover .text-1
 {
     color: #fff;
 }
 
 /* Style 2 */
-.card-2
+.bar-2
 {
     position: relative;
     display: flex;
@@ -155,7 +155,7 @@ svg circle:nth-child(2)
     transition: 0.5s;
 }
 
-.card-2::before
+.bar-2::before
 {
     content: '';
     position: absolute;
@@ -167,13 +167,13 @@ svg circle:nth-child(2)
     z-index: 10;
 }
 
-.card-2:hover
+.bar-2:hover
 {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
 }
 
-.card-2 .text-2
+.bar-2 .text-2
 {
     position: relative;
     width: 110px;
@@ -183,7 +183,7 @@ svg circle:nth-child(2)
     text-transform: uppercase;
 }
 
-.card-2 .value-2
+.bar-2 .value-2
 {
     position: relative;
     width: 40px;
@@ -193,7 +193,7 @@ svg circle:nth-child(2)
     text-transform: uppercase;
 }
 
-.card-2 .percent-2
+.bar-2 .percent-2
 {
     position: relative;
     width: calc(100% - 250px);
@@ -205,7 +205,7 @@ svg circle:nth-child(2)
     overflow: hidden;
 }
 
-.card-2 .percent-2 .progress-2
+.bar-2 .percent-2 .progress-2
 {
     position: absolute;
     top: 0;
@@ -225,7 +225,7 @@ svg circle:nth-child(2)
     }
 }
 
-.card-2:nth-child(2) .percent-2 .progress-2
+.bar-2:nth-child(2) .percent-2 .progress-2
 {
     width: 90%;
     background: linear-gradient(45deg, #2196f3, #673ab7);

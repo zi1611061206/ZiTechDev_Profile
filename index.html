@@ -17,6 +17,8 @@
     <!-- Boostrap 4.0 css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- LightBox Css -->
+    <link href="lib/lightbox2-dev/src/css/lightbox.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/my-styles.css" rel="stylesheet" />
@@ -29,13 +31,18 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
 
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="#introduce">
+
             <span class="d-block d-lg-none">
                 <img class="d-inline-block align-top zi-logo-sm" src="assets/img/logo.jpg" alt="logo"> ZiTechDev
             </span>
-            <span class="d-none d-lg-block m-3">
-                <img class="img-fluid img-thumbnail shadow rounded-circle mx-auto" src="assets/img/profile.jpg" alt="Avatar" />
-            </span>
+
+            <a href="assets/img/profile.jpg" data-lightbox="avatar" data-title="My Avatar">
+                <span class="d-none d-lg-block m-3">
+                    <img class="img-fluid img-thumbnail shadow rounded-circle mx-auto" src="assets/img/profile.jpg" alt="Avatar" />
+                </span>
+            </a>
+
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -102,7 +109,7 @@
     <!-- Page Content-->
     <div class="container p-0">
         <!-- introduce-->
-        <section id="introduce">
+        <section id="introduce" style="height: 100vh;">
             <div class="resume-section-content">
                 <!-- Carousel -->
                 <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -254,7 +261,7 @@
 
                 <div class="zi-programing-language row d-flex justify-content-center">
                     
-                    <div class="card-2 col-lg-6">
+                    <div class="bar-2 col-lg-6">
                         <span class="text-2">C#</span>
                         <div class="percent-2">
                             <div class="progress-2"></div>
@@ -262,7 +269,7 @@
                         <span class="value-2">85%</span>
                     </div>
                     
-                    <div class="card-2 col-lg-6">
+                    <div class="bar-2 col-lg-6">
                         <span class="text-2">Java</span>
                         <div class="percent-2">
                             <div class="progress-2"></div>
@@ -270,7 +277,7 @@
                         <span class="value-2">85%</span>
                     </div>
                     
-                    <div class="card-2 col-lg-6">
+                    <div class="bar-2 col-lg-6">
                         <span class="text-2">Python</span>
                         <div class="percent-2">
                             <div class="progress-2"></div>
@@ -278,7 +285,7 @@
                         <span class="value-2">50%</span>
                     </div>
                     
-                    <div class="card-2 col-lg-6">
+                    <div class="bar-2 col-lg-6">
                         <span class="text-2">Html</span>
                         <div class="percent-2">
                             <div class="progress-2"></div>
@@ -286,7 +293,7 @@
                         <span class="value-2">70%</span>
                     </div>
                     
-                    <div class="card-2 col-lg-6">
+                    <div class="bar-2 col-lg-6">
                         <span class="text-2">Css</span>
                         <div class="percent-2">
                             <div class="progress-2"></div>
@@ -294,7 +301,7 @@
                         <span class="value-2">60%</span>
                     </div>
                     
-                    <div class="card-2 col-lg-6">
+                    <div class="bar-2 col-lg-6">
                         <span class="text-2">Js</span>
                         <div class="percent-2">
                             <div class="progress-2"></div>
@@ -302,7 +309,7 @@
                         <span class="value-2">60%</span>
                     </div>
                     
-                    <div class="card-2 col-lg-6">
+                    <div class="bar-2 col-lg-6">
                         <span class="text-2">sql</span>
                         <div class="percent-2">
                             <div class="progress-2"></div>
@@ -310,7 +317,7 @@
                         <span class="value-2">80%</span>
                     </div>
                     
-                    <div class="card-2 col-lg-6">
+                    <div class="bar-2 col-lg-6">
                         <span class="text-2">Mysql</span>
                         <div class="percent-2">
                             <div class="progress-2"></div>
@@ -322,73 +329,73 @@
 
                 <div class="subheading mb-3">Công cụ</div>
 
-                <div class="zi-programing-tool row d-flex justify-content-center">
+                <div class="row d-flex justify-content-center">
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/visual-studio-logo.png" alt="">
+                        <img class="img-3" src="assets/img/visual-studio-logo.png" alt="Microsoft Visual Studio Logo">
                         <h3 class="name-3">Visual Studio</h3>
                         <h3 class=price-3>Visual Studio</h3>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/visual-studio-code-logo.png" alt="">
+                        <img class="img-3" src="assets/img/visual-studio-code-logo.png" alt="Microsoft Visual Studio Code Logo">
                         <h3 class="name-3">Visual Studio Code</h3>
                         <h3 class=price-3>Visual Studio Code</h3>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/android-studio-logo.png" alt="">
+                        <img class="img-3" src="assets/img/android-studio-logo.png" alt="Android Studio Logo">
                         <h3 class="name-3">Android Studio</h3>
                         <h3 class=price-3>Android Studio</h3>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/eclipse-logo.png" alt="">
+                        <img class="img-3" src="assets/img/eclipse-logo.png" alt="Eclipse Logo">
                         <h3 class="name-3">Eclipse</h3>
                         <h3 class=price-3>Eclipse</h3>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/sql-server-logo.png" alt="">
+                        <img class="img-3" src="assets/img/sql-server-logo.png" alt="Microsoft SQL Server (SSMS) Logo">
                         <h3 class="name-3">SQL Server</h3>
                         <h3 class=price-3>SQL Server</h3>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/mysql-workbench-logo.png" alt="">
+                        <img class="img-3" src="assets/img/mysql-workbench-logo.png" alt="MySQL Workbench Logo">
                         <h3 class="name-3">MySQL</h3>
                         <h3 class=price-3>MySQL</h3>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/unity-logo.png" alt="">
+                        <img class="img-3" src="assets/img/unity-logo.png" alt="Unity3D Logo">
                         <h3 class="name-3">Unity</h3>
                         <h3 class=price-3>Unity</h3>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/wordpress-logo.png" alt="">
+                        <img class="img-3" src="assets/img/wordpress-logo.png" alt="Wordpress Logo">
                         <h3 class="name-3">Wordpress</h3>
                         <h3 class=price-3>Wordpress</h3>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/github-logo.png" alt="">
+                        <img class="img-3" src="assets/img/github-logo.png" alt="Github Logo">
                         <h3 class="name-3">Github</h3>
                         <h3 class=price-3>Github</h3>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/turtoise-svn-logo.png" alt="">
+                        <img class="img-3" src="assets/img/turtoise-svn-logo.png" alt="Turtoise SVN Logo">
                         <h3 class="name-3">Turtoise SVN</h3>
                         <h3 class=price-3>Turtoise SVN</h3>
                         <div class="circle-3"></div>
@@ -398,7 +405,7 @@
 
                 <div class="subheading">Công nghệ</div>
 
-                <div class="zi-technology mb-3">
+                <div class="mb-3">
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -433,7 +440,7 @@
 
                 <div class="subheading">Mô hình - Kiến trúc</div>
 
-                <div class="zi-model mb-3">
+                <div class="mb-3">
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -441,7 +448,7 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            N - Layer
+                            N - Layers
                         </li>
                         <li hidden>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -457,12 +464,71 @@
         <section class="resume-section" id="soft-skills">
             <div class="resume-section-content">
                 <h2 class="mb-5">Kỹ năng mềm</h2>
-                <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid
-                    skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking,
-                    free climbing, and kayaking.</p>
-                <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television
-                    shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest
-                    technology advancements in the front-end web development world.</p>
+                
+                <div class="row d-flex justify-content-center">
+                    
+                    <div class="bar-1">
+                        <div class="box-1">
+                            <div class="percent-1">
+                                <svg class="svg-1">
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="value-1">
+                                    <h2>80<span>%</span></h2>
+                                </div>
+                            </div>
+                            <h4 class="text-1">Làm việc nhóm</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="bar-1">
+                        <div class="box-1">
+                            <div class="percent-1">
+                                <svg class="svg-1">
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="value-1">
+                                    <h2>80<span>%</span></h2>
+                                </div>
+                            </div>
+                            <h4 class="text-1">Phân tích tổng hợp</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="bar-1">
+                        <div class="box-1">
+                            <div class="percent-1">
+                                <svg class="svg-1">
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="value-1">
+                                    <h2>75<span>%</span></h2>
+                                </div>
+                            </div>
+                            <h4 class="text-1">Tiếng Anh</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="bar-1">
+                        <div class="box-1">
+                            <div class="percent-1">
+                                <svg class="svg-1">
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="value-1">
+                                    <h2>70<span>%</span></h2>
+                                </div>
+                            </div>
+                            <h4 class="text-1">Thuyết trình</h4>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </section>
         <hr class="m-0" />
@@ -470,94 +536,187 @@
         <section class="resume-section" id="professional-experiences">
             <div class="resume-section-content">
                 <h2 class="mb-5">Kinh nghiệm chuyên môn</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Google Analytics Certified Developer
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Mobile Web Specialist - Google Certification
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2
-                        <sup>nd</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - James Buchanan High School - Hackathon 2006
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        3
-                        <sup>rd</sup>
-                        Place - James Buchanan High School - Hackathon 2005
-                    </li>
-                </ul>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">FPT Software Hồ Chí Minh</h3>
+                        <div class="subheading mb-3">Thực tập sinh</div>
+                        <img class="zi-logo-rectangle" src="assets/img/fpt-software-logo.png" alt="FPT Software Logo">
+                        <img class="zi-logo-rectangle" src="assets/img/fpt-software-academy-logo.png" alt="FPT Software Academy Logo">
+                        <div>Công việc đảm nhận: Module ứng dụng web quản lý của dự án (bảo mật).</div>
+                        <div>Vị trí đảm nhận: Team Leader (7 thành viên).</div>
+                        <div>Ngôn ngữ: Java</div>
+                        <div>Nền tảng: Spring Boot - Spring Framework.</div>
+                        <div>Công cụ: Eclipse, MySQL, Postman, Turtoise SVN.</div>
+                        <div>Quy trình phát triển: Agile - Scrum.</div>
+                        <div>Kết quả đánh giá: 9/10. ( <a href="assets/file/fpt-internship-result-note.jpg" data-lightbox="evidence" data-title="fpt-internship-result-note">Minh chứng</a> )</div>
+                        <div>Thành quả đạt được:</div>
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Nâng cao kiến thức về lập trình hướng đối tượng nói chung, ngôn ngữ Java, nền tảng Spring Framework, Web API.
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Quy trình nghiêm ngặt nâng cao trách nhiệm, tính tự giác cá nhân.
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Được học hỏi các kinh nghiệm về lãnh đạo, tổ chức, lập kế hoạch, quản lý thời gian, quy trình triển khai dự án, kỹ năng làm việc nhóm...
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Được đào tại kỹ năng viết Email, ISMS, quản trị rủi ro trong công việc.
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                                Top 30 Final Round FPT Code War 08/2020.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">20/07/2020 - 11/09/2020</span></div>
+                </div>
+
             </div>
         </section>
+        <hr class="m-0" />
         <!-- projects-->
         <section class="resume-section" id="projects">
             <div class="resume-section-content">
                 <h2 class="mb-5">Dự án</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Google Analytics Certified Developer
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Mobile Web Specialist - Google Certification
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2
-                        <sup>nd</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - James Buchanan High School - Hackathon 2006
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        3
-                        <sup>rd</sup>
-                        Place - James Buchanan High School - Hackathon 2005
-                    </li>
-                </ul>
+                <div class="row d-flex justify-content-center">
+                    
+                    <div class="card-1">
+                        <div class="img-1">
+                            <iframe src="https://www.youtube.com/embed/TcJvnB6TMxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="content-1">
+                            <h4 class="name-1">Ứng dụng Quản lý quán cà phê ZiCoffee</h4>
+                            <h5 class=price-1>Desktop Application</h5>
+                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
+                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
+                            </a>
+                            <p class="description-1">
+                                <ul class="list-inline">
+                                    <li><i class="fas fa-check"></i> Windows Forms (.NET Framework)</li>
+                                    <li><i class="fas fa-check"></i> SQL</li>
+                                    <li><i class="fas fa-check"></i> ReportViewer</li>
+                                    <li hidden><i class="fas fa-check"></i> Entity Framework</li>
+                                    <li hidden><i class="fas fa-check"></i> DevExpress</li>
+                                    <li hidden><i class="fas fa-check"></i> N - Layers</li>
+                                    <li hidden><i class="fas fa-check"></i> Crystal Report</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-1">
+                        <div class="img-1">
+                            <iframe src="https://www.youtube.com/embed/TcJvnB6TMxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="content-1">
+                            <h4 class="name-1">Ứng dụng Gọi món quán cà phê ZiOrder</h4>
+                            <h5 class=price-1>Mobile Application</h5>
+                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
+                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
+                            </a>
+                            <p class="description-1">
+                                <ul class="list-inline">
+                                    <li><i class="fas fa-check"></i> Android - Java</li>
+                                    <li><i class="fas fa-check"></i> Đồng bộ với ZiCoffee qua IP mạng Wifi</li>
+                                    <li><i class="fas fa-check"></i> QR Code</li>
+                                    <li hidden><i class="fas fa-check"></i> Material Design</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-1">
+                        <div class="img-1">
+                            <iframe src="https://www.youtube.com/embed/TcJvnB6TMxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="content-1">
+                            <h4 class="name-1">Blog chia sẻ kiến thức ZiTechDev</h4>
+                            <h5 class=price-1>Web Application</h5>
+                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
+                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
+                            </a>
+                            <p class="description-1">
+                                <ul class="list-inline">
+                                    <li><i class="fas fa-check"></i> ASP.NET MVC (.NET Core)</li>
+                                    <li><i class="fas fa-check"></i> Restful API</li>
+                                    <li><i class="fas fa-check"></i> SQL</li>
+                                    <li><i class="fas fa-check"></i> Entity Framework</li>
+                                    <li><i class="fas fa-check"></i> Identity Server</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-1">
+                        <div class="img-1">
+                            <iframe src="https://www.youtube.com/embed/TcJvnB6TMxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="content-1">
+                            <h4 class="name-1">Dự án thực tập FPT Software HCM</h4>
+                            <h5 class=price-1>Web Application</h5>
+                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
+                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
+                            </a>
+                            <p class="description-1">
+                                <ul class="list-inline">
+                                    <li><i class="fas fa-check"></i> Spring Boot (Spring Framework)</li>
+                                    <li><i class="fas fa-check"></i> Web API</li>
+                                    <li><i class="fas fa-check"></i> MySQL</li>
+                                    <li><i class="fas fa-check"></i> JSTL</li>
+                                    <li><i class="fas fa-check"></i> Spring Security</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-1">
+                        <div class="img-1">
+                            <iframe src="https://www.youtube.com/embed/TcJvnB6TMxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="content-1">
+                            <h4 class="name-1">Mô hình nhận diện cảm xúc dựa trên khuôn mặt ZiEmotionFacialRecognition</h4>
+                            <h5 class=price-1>Machine Learning Research</h5>
+                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
+                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
+                            </a>
+                            <p class="description-1">
+                                <ul class="list-inline">
+                                    <li><i class="fas fa-check"></i> Convolutional neural network</li>
+                                    <li><i class="fas fa-check"></i> Kỹ thuật xử lý ảnh</li>
+                                    <li><i class="fas fa-check"></i> Facial Detected</li>
+                                    <li><i class="fas fa-check"></i> Mini-Xception model </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-1">
+                        <div class="img-1">
+                            <iframe src="https://www.youtube.com/embed/TcJvnB6TMxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="content-1">
+                            <h4 class="name-1">Game ZiFlappyBird / ZiHappySanta (Funny)</h4>
+                            <h5 class=price-1>2D</h5>
+                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
+                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
+                            </a>
+                            <p class="description-1">
+                                <ul class="list-inline">
+                                    <li><i class="fas fa-check"></i> Unity3D - C#</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </section>
+        <hr class="m-0" />
         <!-- contact-->
         <section class="resume-section" id="contact">
             <div class="resume-section-content">
@@ -616,6 +775,8 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Vanilla Tilt -->
     <script type="text/javascript" src="lib/vanila-tilt/vanilla-tilt.js"></script>
+    <!-- LightBox -->
+    <script src="lib/lightbox2-dev/src/js/lightbox.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="js/my-scripts.js"></script>
