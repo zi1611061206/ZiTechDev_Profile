@@ -881,7 +881,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     text-align: center;
     line-height: 1;
     font-size: 30px;
-    right: 20px;
+    right: 100px;
     bottom: 20px;
     transition: 0.5s;
     z-index: 11;
