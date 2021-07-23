@@ -21,6 +21,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: #fff;
 }
 
+.zi-navbar
+{
+    background: #000;
+}
+
 .zi-logo-sm {
     vertical-align: middle;
     width: 30px;
@@ -165,6 +170,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   to {
       transform: scale(1, 1);
   }
+}
+
+.introduce
+{
+    height: 100vh;
 }
 
 /* Text Card */
@@ -860,4 +870,42 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 {
     width: 75%;
     background: linear-gradient(45deg, #2196f3, #673ab7);
+}
+
+ /* Back to Top CSS  */
+.back-to-top {
+    position: fixed;
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 1;
+    font-size: 30px;
+    right: 20px;
+    bottom: 20px;
+    transition: 0.5s;
+    z-index: 11;
+}
+
+.back-to-top i {
+    color: #222222;
+}
+
+.back-to-top i:hover {
+    color: #FF6F61;
+}
+
+.back-to-top {
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
 }

@@ -6,7 +6,7 @@
     // Ví dụ: với chế độ nghiêm ngặt, bạn không thể sử dụng các biến chưa được khai báo.
     // Tất cả các trình duyệt hiện đại đều hỗ trợ "sử dụng nghiêm ngặt" ngoại trừ Internet Explorer 9 trở xuống
     // "use strict"; // Xác định rằng mã JavaScript phải được thực thi ở "chế độ nghiêm ngặt".
-    
+
     // Hoạt ảnh gõ tự động
     if ($('.content-inner .show-text').length == 1) {
         var typed_strings = $('.content-inner .typed-text').text() + '^1000'; // Dừng 1s rồi gõ phần tử tiếp theo (nếu có)
@@ -29,33 +29,33 @@
             attr: null, // Thuộc tính để gõ (ex: placeholder, value, HTML text)
             bindInputFocusEvents: false, // Liên kết với tiêu điểm và làm mờ nếu el là đầu vào văn bản
             contentType: 'html', // contentType 'html' hoặc 'null' cho chuỗi trần
-            onBegin: (self) => {}, // Hàm sự kiện trước khi bắt đầu gõ
-            onComplete: (self) => {}, // Hàm sự kiện khi gõ hoàn tất
-            preStringTyped: (arrayPos, self) => {}, // Hàm sự kiện trước mỗi phần tử được gõ
-            onStringTyped: (arrayPos, self) => {}, // Hàm sự kiện sau mỗi phần tử được gõ
-            onLastStringBackspaced: (self) => {}, // Hàm sự kiện sau phần tử cuối cùng được gõ
-            onTypingPaused: (arrayPos, self) => {}, // Hàm sự kiện tạm dừng gõ
-            onTypingResumed: (arrayPos, self) => {}, // Hàm sự kiện tiếp tục gõ
-            onReset: (self) => {}, // Hàm sự kiện sau khi reset
-            onStop: (arrayPos, self) => {}, // Hàm sự kiện sau khi dừng gõ
-            onStart: (arrayPos, self) => {}, // Hàm sự kiện sau khi bắt đầu
-            onDestroy: (self) => {} // Hàm sự kiện sau khi hủy
+            onBegin: (self) => { }, // Hàm sự kiện trước khi bắt đầu gõ
+            onComplete: (self) => { }, // Hàm sự kiện khi gõ hoàn tất
+            preStringTyped: (arrayPos, self) => { }, // Hàm sự kiện trước mỗi phần tử được gõ
+            onStringTyped: (arrayPos, self) => { }, // Hàm sự kiện sau mỗi phần tử được gõ
+            onLastStringBackspaced: (self) => { }, // Hàm sự kiện sau phần tử cuối cùng được gõ
+            onTypingPaused: (arrayPos, self) => { }, // Hàm sự kiện tạm dừng gõ
+            onTypingResumed: (arrayPos, self) => { }, // Hàm sự kiện tiếp tục gõ
+            onReset: (self) => { }, // Hàm sự kiện sau khi reset
+            onStop: (arrayPos, self) => { }, // Hàm sự kiện sau khi dừng gõ
+            onStart: (arrayPos, self) => { }, // Hàm sự kiện sau khi bắt đầu
+            onDestroy: (self) => { } // Hàm sự kiện sau khi hủy
         });
     }
 
 })(jQuery);
 
 // Dừng chuyển slide khi mouse hover
-$(function(){
+$(function () {
     $('#myCarousel.slide').carousel({
         interval: 5000,
         pause: "hover"
     });
 
-    $('.zi-slide').hover(function(){
-       $("#myCarousel").carousel('pause');
-    }).blur(function() {
-       $("#myCarousel").carousel('cycle');
+    $('.zi-slide').hover(function () {
+        $("#myCarousel").carousel('pause');
+    }).blur(function () {
+        $("#myCarousel").carousel('cycle');
     });
 });
 
@@ -64,4 +64,12 @@ VanillaTilt.init(document.querySelectorAll(".card-3"), {
     max: 25,
     speed: 400
 });
-
+     
+// Back to top button
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 1000) {
+        $('.back-to-top').fadeIn('slow');
+    } else {
+        $('.back-to-top').fadeOut('slow');
+    }
+});
