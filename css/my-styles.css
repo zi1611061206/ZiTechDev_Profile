@@ -909,3 +909,10 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     0% { transform: translateY(0); }
     100% { transform: translateY(-15px); }
 }
+
+/* copyright */
+.zi-copyright
+{
+    font-size: 12px;
+    color: rgb(96, 116, 122);
+}
