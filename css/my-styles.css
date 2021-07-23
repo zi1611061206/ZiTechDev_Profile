@@ -107,8 +107,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     background-color: #2196f3;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 10px 5px 5px #000000;
-    -ms-transform: rotate(-10deg); /* IE 9 */
-    transform: rotate(-10deg);
+    transform-style: preserve-3d;
+    /* -ms-transform: rotate(-10deg); IE 9 */
+    /* transform: rotate(-10deg); */
 }
 
 .typed-cursor{
@@ -915,4 +916,13 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 {
     font-size: 12px;
     color: rgb(96, 116, 122);
+}
+
+/* QR */
+.zi-qr
+{
+    width: 120px;
+    height: 120px;
+    max-width: 400px;
+    max-height: 400px;
 }

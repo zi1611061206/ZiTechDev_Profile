@@ -64,6 +64,10 @@ VanillaTilt.init(document.querySelectorAll(".card-3"), {
     max: 25,
     speed: 400
 });
+VanillaTilt.init(document.querySelectorAll(".zi-quote"), {
+    max: 25,
+    speed: 400
+});
      
 // Back to top button
 $(window).scroll(function () {
@@ -73,3 +77,12 @@ $(window).scroll(function () {
         $('.back-to-top').fadeOut('slow');
     }
 });
+
+// LightBox Options
+lightbox.option({
+    'alwaysShowNavOnTouchDevices':true,
+    'fitImagesInViewport':true,
+    'wrapAround':true,
+    'resizeDuration': 200,
+    'disableScrolling':true
+  })
