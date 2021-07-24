@@ -96,6 +96,13 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   .zi-prev:hover, .zi-next:hover {
     background-color: rgba(0,0,0,0.8);
   }
+
+.carousel-inner .carousel-item:nth-child(2) .zi-slide
+{
+    
+    background: rgb(34, 151, 219);
+    background: linear-gradient(129deg,rgba(34, 151, 219, 1) 49%,rgba(37, 54, 85, 1) 49%);
+}
  
 .zi-quote {
     position: absolute;
@@ -104,12 +111,75 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     bottom: 15%;
     left: 15%;
     right: 15%;
-    background-color: #2196f3;
     border-radius: 20px 20px 20px 20px;
+    border-top: 2px solid rgba(255, 255, 255, 1);
+    border-left: 2px solid rgba(255, 255, 255, 1);
     box-shadow: 10px 10px 5px 5px #000000;
-    transform-style: preserve-3d;
     /* -ms-transform: rotate(-10deg); IE 9 */
-    /* transform: rotate(-10deg); */
+    transform: rotate(-10deg);
+    background: rgb(34, 151, 219);
+    background: linear-gradient(129deg, rgba(34, 151, 219, 1) 49%, rgba(37, 54, 85, 1) 49%);
+}
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('../assets/font/digital-7/digital-7.ttf');
+   }
+
+   .zi-clock
+   {
+       position: absolute;
+       left: 35%;
+       bottom: 5%;
+       width: 250px;
+       height: 60px;
+       padding: 10px;
+       text-align: center;
+       border-radius: 5%;
+       border: 3px solid rgba(37, 54, 85, 1);
+       box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.05),
+                   20px 20px 20px rgba(0, 0, 0, 0.3);
+   }
+
+   .zi-clock h3
+   {
+       color: rgb(34, 151, 219);
+       font-family:'digital-clock-font';
+       font-weight: 400;
+       font-style: italic;
+       font-size: 36px;
+       letter-spacing: 1px;
+       text-shadow: -3px -3px 5px rgba(255, 255, 255, 0.09),
+                    3px 3px 5px #000;
+   }
+
+.zi-sign
+{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5%;
+    background: darkblue;
+    border: 6px solid rgba(37, 54, 85, 1);
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.05),
+                20px 20px 20px rgba(0, 0, 0, 0.3),
+                inset -8px -8px 15px rgba(255, 255, 255, 0.05),
+                inset 20px 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+.zi-sign h3
+{
+    font-weight: 300;
+    color: #ffe600;
+    text-shadow: 0 0 5px #ffe600, 
+                0 0 10px #ffe600,
+                0 0 20px #ffe600, 
+                0 0 40px #ffe600, 
+                0 0 80px #ffe600;  
 }
 
 .typed-cursor{

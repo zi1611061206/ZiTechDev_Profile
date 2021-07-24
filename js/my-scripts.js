@@ -42,6 +42,30 @@
             onDestroy: (self) => { } // Hàm sự kiện sau khi hủy
         });
     }
+    
+    if ($('.zi-sign div').length == 1) {
+        var typed_strings = $('.zi-sign div').text() + '^1000'; // Dừng 1s rồi gõ phần tử tiếp theo (nếu có)
+        var typed = new Typed('.zi-sign h3', {
+            strings: typed_strings.split(', '), // Nội dung gõ
+            typeSpeed: 500, // Tốc độ gõ (ms)
+            backSpeed: 1, // Tốc độ xóa (ms)
+            startDelay: 0, // Độ trễ trước khi bắt đầu gõ (ms)
+            shuffle: false, // Không cho phép thay đổi thứ tự gõ strings
+            smartBackspace: false, // Chế độ xóa có chọn lọc
+            backDelay: 1000, // Thời gian chờ khi xóa (ms)
+            fadeOut: true, // Làm mờ thay vì xóa lùi
+            fadeOutClass: 'typed-fade-out', // Chỉ định lớp css cho hoạt ảnh mờ dần
+            fadeOutDelay: 500, // Độ trễ làm mờ (ms)
+            loop: true, // Bật vòng lặp strings
+            loopCount: Infinity, // Số vòng lặp (Infinity - vô cực)
+            showCursor: false, // Hiển thị con trỏ
+            cursorChar: '|', // Ký tự đại diện con trỏ
+            autoInsertCss: true, // Tự động chèn CSS cho con trỏ và fadeOut vào HTML <head>
+            attr: null, // Thuộc tính để gõ (ex: placeholder, value, HTML text)
+            bindInputFocusEvents: false, // Liên kết với tiêu điểm và làm mờ nếu el là đầu vào văn bản
+            contentType: 'html', // contentType 'html' hoặc 'null' cho chuỗi trần
+        });
+    }
 
 })(jQuery);
 
@@ -86,3 +110,34 @@ lightbox.option({
     'resizeDuration': 200,
     'disableScrolling':true
   })
+
+// Digital Clock
+function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("clock").innerText = time;
+    document.getElementById("clock").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
