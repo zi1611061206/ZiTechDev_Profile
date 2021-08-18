@@ -21,6 +21,18 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: #fff;
 }
 
+.table{
+    color: white;
+}
+
+.table th{
+    background: rgb(34, 151, 219);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
 .zi-navbar
 {
     background: #000;
@@ -97,7 +109,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     background-color: rgba(0,0,0,0.8);
   }
 
-.carousel-inner .carousel-item:nth-child(2) .zi-slide
+.carousel-inner .carousel-item:nth-child(3) .zi-slide
 {
     
     background: rgb(34, 151, 219);
@@ -128,30 +140,38 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
    .zi-clock
    {
-       position: absolute;
-       left: 35%;
-       bottom: 5%;
-       width: 250px;
-       height: 60px;
-       padding: 10px;
-       text-align: center;
-       border-radius: 5%;
-       border: 3px solid rgba(37, 54, 85, 1);
-       box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.05),
-                   20px 20px 20px rgba(0, 0, 0, 0.3);
+       display: none;
    }
 
-   .zi-clock h3
-   {
-       color: rgb(34, 151, 219);
-       font-family:'digital-clock-font';
-       font-weight: 400;
-       font-style: italic;
-       font-size: 36px;
-       letter-spacing: 1px;
-       text-shadow: -3px -3px 5px rgba(255, 255, 255, 0.09),
-                    3px 3px 5px #000;
-   }
+   @media only screen and (min-width: 1280px) {
+        .zi-clock
+        {
+            display: inline;
+            position: absolute;
+            left: 35%;
+            bottom: 5%;
+            width: 250px;
+            height: 60px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5%;
+            border: 3px solid rgba(37, 54, 85, 1);
+            box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.05),
+                        20px 20px 20px rgba(0, 0, 0, 0.3);
+        }
+    
+        .zi-clock h3
+        {
+            color: rgb(34, 151, 219);
+            font-family:'digital-clock-font';
+            font-weight: 400;
+            font-style: italic;
+            font-size: 36px;
+            letter-spacing: 1px;
+            text-shadow: -3px -3px 5px rgba(255, 255, 255, 0.09),
+                        3px 3px 5px #000;
+        }
+    }
 
 .zi-sign
 {
@@ -365,7 +385,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     color: rgba(0, 0, 0, 0.1);
 }
 
-.card-1 .img-1
+/* .card-1 .img-1
 {
     position: relative;
     width: 100%;
@@ -393,7 +413,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 {
     max-width: 300px;
     max-height: 200px;
-}
+} */
 
 .card-1 .content-1
 {
@@ -433,7 +453,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     letter-spacing: 1px;
 }
 
-.card-1:hover .content-1 .description-1
+/* .card-1:hover .content-1 .description-1
 {
     margin-top: 100px;
 }
@@ -459,9 +479,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 {
     top: 0;
     opacity: 1;
-}
+} */
 
-.card-1 .content-1 .thumnail-1
+/* .card-1 .content-1 .thumnail-1
 {
     width: 100px;
     height: 50px;
@@ -471,14 +491,14 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 {
     width: 200px;
     height: 100px;
-}
+} */
 
 /* Card 3D */
 .card-3
 {
     position: relative;
-    width: 220px;
-    height: 300px;
+    width: 180px;
+    height: 200px;
     background: #122936;
     border-radius: 20px;
     overflow: visible;
@@ -605,8 +625,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     position: absolute;
     top: 40%;
     left: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     transition: 0.5s;
     background: lightslategrey;
@@ -626,7 +646,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     position: absolute;
     top: 40%;
     left: 50%;
-    max-width: 120px;
+    max-width: 80px;
     transform-style: preserve-3d;
     transform: translate3d(-50%,-50%,100px) rotate(-10deg);
     transition: 0.5s;
@@ -895,48 +915,56 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     }
 }
 
+/* C# */
 .zi-programing-language .bar-2:nth-child(1) .percent-2 .progress-2
 {
     width: 85%;
     background: linear-gradient(45deg, #2196f3, #673ab7);
 }
 
+/* Java */
 .zi-programing-language .bar-2:nth-child(2) .percent-2 .progress-2
 {
     width: 85%;
     background: linear-gradient(45deg, #2196f3, #673ab7);
 }
 
+/* Python */
 .zi-programing-language .bar-2:nth-child(3) .percent-2 .progress-2
 {
     width: 50%;
     background: linear-gradient(45deg, #2196f3, #673ab7);
 }
 
+/* JS */
 .zi-programing-language .bar-2:nth-child(4) .percent-2 .progress-2
+{
+    width: 60%;
+    background: linear-gradient(45deg, #2196f3, #673ab7);
+}
+
+/* html */
+.zi-programing-language .bar-2:nth-child(5) .percent-2 .progress-2
 {
     width: 70%;
     background: linear-gradient(45deg, #2196f3, #673ab7);
 }
 
-.zi-programing-language .bar-2:nth-child(5) .percent-2 .progress-2
-{
-    width: 50%;
-    background: linear-gradient(45deg, #2196f3, #673ab7);
-}
-
+/* Css */
 .zi-programing-language .bar-2:nth-child(6) .percent-2 .progress-2
 {
-    width: 50%;
+    width: 60%;
     background: linear-gradient(45deg, #2196f3, #673ab7);
 }
 
+/* SQL */
 .zi-programing-language .bar-2:nth-child(7) .percent-2 .progress-2
 {
     width: 80%;
     background: linear-gradient(45deg, #2196f3, #673ab7);
 }
 
+/* MySQL */
 .zi-programing-language .bar-2:nth-child(8) .percent-2 .progress-2
 {
     width: 75%;

@@ -1,0 +1,12 @@
+- zi-quote 3d góc nghiêng ánh neon + 
+- youtube, google map  embed are failing
+- project non real demo
+- scroll to next section
+- transcript
+- view count, visitor infor
+- button phone call
+- multi language
+- Light/Dark
+
+- Nav Activity (future)
+- Nav tự đánh giá
