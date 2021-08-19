@@ -1,0 +1,90 @@
+.light-theme {
+    background-color: #f2f4f8;
+    color: #000;
+  }
+  
+.light-theme h1{
+  color: #000;
+}
+  
+.light-theme h2{
+  color: #000;
+}
+  
+.light-theme h3{
+  color: #000;
+}
+  
+.light-theme h4{
+  color: #000;
+}
+  
+.light-theme h5{
+  color: #000;
+}
+  
+.light-theme h6{
+  color: #000;
+}
+  
+.light-theme p{
+  color: #000;
+}
+
+/* ----------------------------------------- */
+
+.light-theme .zi-card-text-horizontal
+{
+  box-shadow: 10px 10px 5px 5px #00000054;
+}
+
+.light-theme .bar-2:hover
+{
+  box-shadow: 10px 10px 5px 5px #00000054;
+}
+
+.light-theme .card-3
+{
+  box-shadow: 10px 10px 5px 5px #00000054;
+}
+
+.light-theme .bar-1:hover
+{
+  box-shadow: 10px 10px 5px 5px #00000054;
+}
+
+.light-theme .card-1
+{
+  box-shadow: 10px 10px 5px 5px #00000054;
+}
+
+/* ----------------------------------------- */
+
+.light-theme .zi-navbar
+{
+    background: #2196f3;
+}
+
+/* .light-theme .navbar-dark .navbar-nav .nav-link{
+    color: #000;
+}
+
+.light-theme .navbar-dark .navbar-nav .nav-link:hover{
+  color: #2196f3;
+}
+
+.light-theme .navbar-dark .navbar-nav .nav-link:focus {
+  color: #2196f3;
+} */
+
+.light-theme .zi-slide{
+    background: #324d64;
+}
+
+/* ----------------------------------------- */
+.light-theme .zi-clock h3{
+    color: #2196f3;
+}
+.light-theme .zi-sign h3{
+    color: #ffe600;
+}

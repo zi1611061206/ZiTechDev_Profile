@@ -26,7 +26,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 .table th{
-    background: rgb(34, 151, 219);
+    background: #2196f3;
     text-align: center;
     font-size: 20px;
     font-weight: 800;
@@ -35,7 +35,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 .zi-navbar
 {
-    background: #000;
+    background: #293145;
+    box-shadow: 5px 5px 5px 5px #00000054;
 }
 
 .zi-logo-sm {
@@ -112,8 +113,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .carousel-inner .carousel-item:nth-child(3) .zi-slide
 {
     
-    background: rgb(34, 151, 219);
-    background: linear-gradient(129deg,rgba(34, 151, 219, 1) 49%,rgba(37, 54, 85, 1) 49%);
+    background: #2196f3;
+    background: linear-gradient(129deg,#2196f3 49%,rgba(37, 54, 85, 1) 49%);
 }
  
 .zi-quote {
@@ -129,8 +130,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     box-shadow: 10px 10px 5px 5px #000000;
     /* -ms-transform: rotate(-10deg); IE 9 */
     transform: rotate(-10deg);
-    background: rgb(34, 151, 219);
-    background: linear-gradient(129deg, rgba(34, 151, 219, 1) 49%, rgba(37, 54, 85, 1) 49%);
+    background: #2196f3;
+    background: linear-gradient(129deg, #2196f3 49%, rgba(37, 54, 85, 1) 49%);
 }
 
 @font-face{
@@ -316,6 +317,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   position: absolute;
   top: 50%;
   left: 40%;
+  color: #fff;
 }
 
 .zi-card-text-horizontal:hover .zi-title
@@ -332,6 +334,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     margin-top: 60px;
     opacity: 0;
     visibility: hidden;
+    color: #fff;
 }
 
 .zi-card-text-horizontal:hover .zi-content
@@ -351,7 +354,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     border-radius: 20px;
     overflow: hidden;
     margin: 20px;
-    box-shadow: 10px 10px 5px 5px #000000;
+    box-shadow: 10px 10px 5px 5px #000;
 }
 
 .card-1::before
@@ -446,14 +449,18 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     letter-spacing: 1px;
 }
 
-.card-1 .content-1 .description-1
+.card-1 .content-1 li{
+    color: #fff;
+}
+
+/* .card-1 .content-1 .description-1
 {
     color: #fff;
     font-weight: 100;
     letter-spacing: 1px;
 }
 
-/* .card-1:hover .content-1 .description-1
+.card-1:hover .content-1 .description-1
 {
     margin-top: 100px;
 }
@@ -639,6 +646,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .card-3:hover .circle-3
 {
     top: 60%;
+    filter: drop-shadow(9px 9px 9px #000);
 }
 
 .card-3 .img-3
@@ -657,6 +665,19 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 {
     top: 60%;
     transform: translate3d(-50%,-50%,100px) rotate(15deg);
+    filter: drop-shadow(9px 9px 9px #000);
+}
+
+.zi-demo-icons{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px 0px 20px;
+    font-size: 2rem;
+  }
+
+.zi-demo-icons a{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Rounded Bar */
@@ -758,7 +779,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .bar-1:hover
 {
     transform: translateY(-10px);
-    box-shadow: 10px 10px 5px 5px #000000;
+    box-shadow: 10px 10px 5px 5px #000;
 }
 
 .bar-1 .percent-1
@@ -860,7 +881,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .bar-2:hover
 {
     transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+    box-shadow: 10px 10px 5px 5px #000000;
 }
 
 .bar-2 .text-2
@@ -1024,3 +1045,63 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     max-width: 400px;
     max-height: 400px;
 }
+
+/* Dark / Light mode */
+* {
+    box-sizing: border-box;
+}
+
+.zi-checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
+
+.zi-label{
+    display: flex;
+    background: #292c35;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+
+.zi-ball{
+    background: #fff;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: 0.2s linear;
+}
+
+.zi-checkbox:checked + .zi-label{
+    background: #fff;
+}
+
+.zi-checkbox:checked + .zi-label .zi-ball{
+    transform: translateX(24px);
+    background: #292c35;
+}
+
+/* Change language */
+.zi-language-flag{
+    display: flex;
+    width: 50px;
+    height: 25px;
+    padding: 1px;
+    margin-left: 10px;
+}
+

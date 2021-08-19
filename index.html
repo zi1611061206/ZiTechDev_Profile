@@ -22,12 +22,15 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/my-styles.css" rel="stylesheet" />
+    <link href="css/light-theme.css" rel="stylesheet" />
 </head>
 
 <!-- Dùng body như đối tượng theo dõi cuộn chiều dọc (scrollspy - bootstrap) nhắm mục tiêu tương ứng đến thanh bên navbarResponsive -->
 <!-- Điều kiện cần là thẻ body phải có position: relative -->
 <!-- Các section dùng class="resume-section" trong đó padding-top = 5rem (80px) nên  data-offset="80" -->
 <body id="page-1" class="position-relative" data-spy="scroll" data-target="#navbarResponsive" data-offset="80">
+
+    <p id="ip-address" class="d-none"></p>
 
     <!-- Messenger Plugin chat Code -->
     <div id="fb-root"></div>
@@ -67,7 +70,7 @@
             </span>
 
             <a href="assets/img/profile.jpg" data-lightbox="avatar" data-title="My Avatar">
-                <span class="d-none d-lg-block m-3">
+                <span class="d-none d-lg-block mx-3 mb-1">
                     <img class="img-fluid img-thumbnail shadow rounded-circle mx-auto" src="assets/img/profile.jpg" alt="Avatar" />
                 </span>
             </a>
@@ -80,6 +83,19 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-start px-2">
+                <li class="nav-item mt-3">
+                    <div class="mx-2 d-flex justify-content-center">
+                        <input type="checkbox" class="zi-checkbox" id="ckb-mode" checked>
+                        <label for="ckb-mode" class="zi-label" title="Change theme mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="zi-ball"></div>
+                        </label>
+                        <a href="en/index.html" title="Change language">
+                            <img class="zi-language-flag" src="assets/img/england-flag.png" alt="Change language to English">
+                        </a>
+                    </div>
+                </li>
                 <li class="nav-item mb-1">
                     <a class="nav-link js-scroll-trigger" href="#page-1">
                         Giới thiệu<span class="fa fa-home float-end"></span>
@@ -681,13 +697,10 @@
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
                             <h4 class="name-1">Ứng dụng Quản lý quán cà phê ZiCoffee</h4>
                             <h5 class=price-1>Desktop Application</h5>
-                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
-                            </a>
                             <p class="description-1">
                                 <ul class="list-inline">
                                     <li><i class="fas fa-check"></i> Windows Forms (.NET Framework)</li>
@@ -697,20 +710,10 @@
                                     <li hidden><i class="fas fa-check"></i> DevExpress</li>
                                     <li hidden><i class="fas fa-check"></i> N - Layers</li>
                                     <li hidden><i class="fas fa-check"></i> Crystal Report</li>
-                                    <li><i class="fab fa-github"></i> 
-                                        <a href="#">
-                                            Github
-                                        </a>
-                                    </li>
-                                    <li><i class="fab fa-youtube"></i> 
-                                        <a href="#">
-                                            Youtube
-                                        </a>
-                                    </li>
-                                    <li><i class="fa fa-image"></i> 
-                                        <a href="#" data-lightbox="" data-title="">
-                                            Ảnh Demo
-                                        </a>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
                                     </li>
                                 </ul>
                             </p>
@@ -719,7 +722,6 @@
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
                             <h4 class="name-1">Ứng dụng Gọi món quán cà phê ZiOrder</h4>
@@ -730,20 +732,10 @@
                                     <li><i class="fas fa-check"></i> Đồng bộ với ZiCoffee qua IP mạng Wifi</li>
                                     <li><i class="fas fa-check"></i> QR Code</li>
                                     <li hidden><i class="fas fa-check"></i> Material Design</li>
-                                    <li><i class="fab fa-github"></i> 
-                                        <a href="#">
-                                            Github
-                                        </a>
-                                    </li>
-                                    <li><i class="fab fa-youtube"></i> 
-                                        <a href="#">
-                                            Youtube
-                                        </a>
-                                    </li>
-                                    <li><i class="fa fa-image"></i> 
-                                        <a href="#" data-lightbox="" data-title="">
-                                            Ảnh Demo
-                                        </a>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
                                     </li>
                                 </ul>
                             </p>
@@ -752,7 +744,6 @@
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
                             <h4 class="name-1">Blog chia sẻ kiến thức ZiTechDev</h4>
@@ -764,20 +755,10 @@
                                     <li><i class="fas fa-check"></i> SQL</li>
                                     <li><i class="fas fa-check"></i> Entity Framework</li>
                                     <li><i class="fas fa-check"></i> Identity Server</li>
-                                    <li><i class="fab fa-github"></i> 
-                                        <a href="#">
-                                            Github
-                                        </a>
-                                    </li>
-                                    <li><i class="fab fa-youtube"></i> 
-                                        <a href="#">
-                                            Youtube
-                                        </a>
-                                    </li>
-                                    <li><i class="fa fa-image"></i> 
-                                        <a href="#" data-lightbox="" data-title="">
-                                            Ảnh Demo
-                                        </a>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
                                     </li>
                                 </ul>
                             </p>
@@ -786,7 +767,6 @@
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
                             <h4 class="name-1">Dự án thực tập FPT Software HCM</h4>
@@ -798,20 +778,10 @@
                                     <li><i class="fas fa-check"></i> MySQL</li>
                                     <li><i class="fas fa-check"></i> JSTL</li>
                                     <li><i class="fas fa-check"></i> Spring Security</li>
-                                    <li><i class="fab fa-github"></i> 
-                                        <a href="#">
-                                            Github
-                                        </a>
-                                    </li>
-                                    <li><i class="fab fa-youtube"></i> 
-                                        <a href="#">
-                                            Youtube
-                                        </a>
-                                    </li>
-                                    <li><i class="fa fa-image"></i> 
-                                        <a href="#" data-lightbox="" data-title="">
-                                            Ảnh Demo
-                                        </a>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
                                     </li>
                                 </ul>
                             </p>
@@ -820,7 +790,6 @@
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
                             <h4 class="name-1">Mô hình nhận diện cảm xúc dựa trên khuôn mặt ZiEmotionFacialRecognition</h4>
@@ -831,20 +800,10 @@
                                     <li><i class="fas fa-check"></i> Kỹ thuật xử lý ảnh</li>
                                     <li><i class="fas fa-check"></i> Facial Detected</li>
                                     <li><i class="fas fa-check"></i> Mini-Xception model </li>
-                                    <li><i class="fab fa-github"></i> 
-                                        <a href="#">
-                                            Github
-                                        </a>
-                                    </li>
-                                    <li><i class="fab fa-youtube"></i> 
-                                        <a href="#">
-                                            Youtube
-                                        </a>
-                                    </li>
-                                    <li><i class="fa fa-image"></i> 
-                                        <a href="#" data-lightbox="" data-title="">
-                                            Ảnh Demo
-                                        </a>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
                                     </li>
                                 </ul>
                             </p>
@@ -853,7 +812,6 @@
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
                             <h4 class="name-1">Game ZiFlappyBird / ZiHappySanta (Funny)</h4>
@@ -861,20 +819,10 @@
                             <p class="description-1">
                                 <ul class="list-inline">
                                     <li><i class="fas fa-check"></i> Unity3D - C#</li>
-                                    <li><i class="fab fa-github"></i> 
-                                        <a href="#">
-                                            Github
-                                        </a>
-                                    </li>
-                                    <li><i class="fab fa-youtube"></i> 
-                                        <a href="#">
-                                            Youtube
-                                        </a>
-                                    </li>
-                                    <li><i class="fa fa-image"></i> 
-                                        <a href="#" data-lightbox="" data-title="">
-                                            Ảnh Demo
-                                        </a>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
                                     </li>
                                 </ul>
                             </p>
@@ -900,7 +848,7 @@
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">Tình nguyện viên đội cơ động hỗ trợ phòng chống dịch Covid-19</h3>
-                        <div class="subheading mb-3">Quận Đoàn Quận Bình Thạnh ( <a href="/show-evidence.html" target="_blank">minh chứng</a> )</div>
+                        <div class="subheading mb-3">Quận Đoàn Quận Bình Thạnh ( <a href="show-evidence.html" target="_blank">minh chứng</a> )</div>
                         <div>134 Lê Văn Duyệt, Phường 3, Bình Thạnh, Thành phố Hồ Chí Minh</div>
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">28/07/2021</span></div>
@@ -919,17 +867,13 @@
                             <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="assets/img/email-img.png" alt="Mail to">
                             <h3 class="col-md-6 mt-5 mt-sm-1">Gửi email cho tôi</h3>
                         </a>
+                        <a class="row m-2 bg-primary text-decoration-none d-flex justify-content-center rounded-3" href="tel:0943144178">
+                            <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="assets/img/phone-img.png" alt="Make a phone call">
+                            <h3 class="col-md-6 mt-5 mt-sm-1">Gọi cho tôi</h3>
+                        </a>
                         <a class="row m-2 bg-info text-decoration-none d-flex justify-content-center rounded-3" href="assets/qr/fb-qr.png" data-lightbox="qrcode" data-title="Facebook QR Code">
                             <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="assets/qr/fb-qr.png" alt="Facebook QR Code">
                             <h3 class="col-md-6 mt-5 mt-sm-1">Facebook</h3>
-                        </a>
-                        <a class="row m-2 bg-primary text-decoration-none d-flex justify-content-center rounded-3" href="assets/qr/metap-qr.png" data-lightbox="qrcode" data-title="Metap QR Code">
-                            <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="assets/qr/metap-qr.png" alt="Metap QR Code">
-                            <h3 class="col-md-6 mt-5 mt-sm-1">Metap</h3>
-                        </a>
-                        <a class="row m-2 bg-secondary text-decoration-none d-flex justify-content-center rounded-3" href="assets/qr/phone-qr.png" data-lightbox="qrcode" data-title="Phone QR Code">
-                            <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="assets/qr/phone-qr.png" alt="Phone QR Code">
-                            <h3 class="col-md-6 mt-5 mt-sm-1">Số điện thoại</h3>
                         </a>
                     </div>
 
@@ -962,6 +906,9 @@
     <script src="js/scripts.js"></script>
     <script src="js/my-scripts.js"></script>
     <script src="js/scroll-by-jquery-example.js"></script>
+    <!-- Logger Support -->
+    <script src="js/logger-control.js"></script>
+    </script>
     
 </body>
 

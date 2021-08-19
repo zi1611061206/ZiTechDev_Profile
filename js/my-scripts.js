@@ -141,3 +141,9 @@ function showTime(){
 }
 
 showTime();
+
+// Dark / Light Mode
+const ckbMode = document.getElementById('ckb-mode');
+ckbMode.addEventListener('change', ()=>{
+    document.body.classList.toggle('light-theme');
+});

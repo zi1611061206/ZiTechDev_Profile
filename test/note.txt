@@ -4,9 +4,6 @@
 - scroll to next section
 - transcript
 - view count, visitor infor
-- button phone call
++ button phone call
 - multi language
-- Light/Dark
-
-- Nav Activity (future)
-- Nav tự đánh giá
++ Light/Dark
