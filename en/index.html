@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="CV page about ZiTechDev" />
     <meta name="author" content="ZiTechDev" />
-    <title>Nguyễn Ngọc Hiếu (CV) - ZiTechDev</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <title>Nguyen Ngoc Hieu (CV) - ZiTechDev</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
         type="text/css" />
@@ -15,19 +15,22 @@
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- Boostrap 4.0 css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- LightBox Css -->
-    <link href="lib/lightbox2-dev/src/css/lightbox.css" rel="stylesheet" />
+    <link href="../lib/lightbox2-dev/src/css/lightbox.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/my-styles.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/my-styles.css" rel="stylesheet" />
+    <link href="../css/light-theme.css" rel="stylesheet" />
 </head>
 
 <!-- Dùng body như đối tượng theo dõi cuộn chiều dọc (scrollspy - bootstrap) nhắm mục tiêu tương ứng đến thanh bên navbarResponsive -->
 <!-- Điều kiện cần là thẻ body phải có position: relative -->
 <!-- Các section dùng class="resume-section" trong đó padding-top = 5rem (80px) nên  data-offset="80" -->
 <body id="page-1" class="position-relative" data-spy="scroll" data-target="#navbarResponsive" data-offset="80">
+
+    <p id="ip-address" class="d-none"></p>
 
     <!-- Messenger Plugin chat Code -->
     <div id="fb-root"></div>
@@ -63,12 +66,12 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-1">
 
             <span class="d-block d-lg-none">
-                <img class="d-inline-block align-top zi-logo-sm" src="assets/img/logo.jpg" alt="logo"> ZiTechDev
+                <img class="d-inline-block align-top zi-logo-sm" src="../assets/img/zi-logo.jpg" alt="ZI Logo"> ZiTechDev
             </span>
 
-            <a href="assets/img/profile.jpg" data-lightbox="avatar" data-title="My Avatar">
-                <span class="d-none d-lg-block m-3">
-                    <img class="img-fluid img-thumbnail shadow rounded-circle mx-auto" src="assets/img/profile.jpg" alt="Avatar" />
+            <a href="../assets/img/profile.jpg" data-lightbox="avatar" data-title="My Avatar">
+                <span class="d-none d-lg-block mx-3 mb-1">
+                    <img class="img-fluid img-thumbnail shadow rounded-circle mx-auto" src="../assets/img/profile.jpg" alt="Avatar" />
                 </span>
             </a>
 
@@ -80,54 +83,72 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-start px-2">
+                <li class="nav-item mt-3">
+                    <div class="mx-2 d-flex justify-content-center">
+                        <input type="checkbox" class="zi-checkbox" id="ckb-mode" checked>
+                        <label for="ckb-mode" class="zi-label" title="Change theme mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="zi-ball"></div>
+                        </label>
+                        <a href="../index.html" title="Change language">
+                            <img class="zi-language-flag" src="../assets/img/vietnam-flag.png" alt="Change language to English">
+                        </a>
+                    </div>
+                </li>
                 <li class="nav-item mb-1">
                     <a class="nav-link js-scroll-trigger" href="#page-1">
-                        Giới thiệu<span class="fa fa-home float-end"></span>
+                        Introduce<span class="fa fa-home float-end"></span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#page-2">
-                        Mục tiêu<span class="fa fa-bullseye float-end"></span> 
+                        Career Objectives<span class="fa fa-bullseye float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#page-3">
-                        Học vấn<span class="fa fa-school float-end"></span> 
+                        Education<span class="fa fa-school float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#page-4">
-                        Chuyên môn<span class="fa fa-laptop-code float-end"></span> 
+                        Specialized Skills<span class="fa fa-laptop-code float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#page-5">
-                        Kỹ năng mềm<span class="fa fa-compass float-end"></span> 
+                        Soft Skills<span class="fa fa-compass float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#page-6">
-                        Kinh nghiệm<span class="fa fa-user-tie float-end"></span> 
+                        Experience<span class="fa fa-user-tie float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#page-7">
-                        Dự án<span class="fa fa-code float-end"></span> 
+                        Projects<span class="fa fa-code float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#page-8">
-                        Liên hệ<span class="fa fa-id-card float-end"></span> 
+                        Activities<span class="fa fa-hand-holding-heart float-end"></span> 
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#page-9">
+                        Contact<span class="fa fa-id-card float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item" hidden>
                     <a class="nav-link js-scroll-trigger" href="#">
-                        Kinh nghiệm khác<span class="fa fa-tasks float-end"></span> 
+                        Other Experience<span class="fa fa-tasks float-end"></span> 
                     </a>
                 </li>
                 <li class="nav-item" hidden>
                     <a class="nav-link js-scroll-trigger" href="#">
-                        Người tham chiếu<span class="fa fa-people-arrows float-end"></span> 
+                        Reference Person<span class="fa fa-people-arrows float-end"></span> 
                     </a>
                 </li>
             </ul>
@@ -149,6 +170,7 @@
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
@@ -159,40 +181,69 @@
                                         <div class="row mt-5">
                                             <div class="col-2"></div>
                                             <div class="col-8 p-0">
-                                                <h2 class="d-block text-center text-success">Nguyễn Ngọc Hiếu</h2>
+                                                <h2 class="d-block text-center text-success">Nguyen Ngoc Hieu</h2>
                                                 <span class="d-block text-center text-white">( ZiTechDev )</span>
                                                 <div class="d-block mt-md-5">
                                                         <h4 class="text-capitalize text-white w-100 my-3">
-                                                            <i class="fa fa-birthday-cake" aria-hidden="true"></i> Ngày sinh: <span class="float-end">05/02/1998</span>
+                                                            <i class="fa fa-birthday-cake" aria-hidden="true"></i> Birthday: <span class="float-end">05/02/1998</span>
                                                         </h4>
                                                         <h4 class="text-capitalize text-white w-100 my-3">
-                                                            <i class="fa fa-mars" aria-hidden="true"></i> Giới tính: <span class="float-end">Nam</span>
+                                                            <i class="fa fa-mars" aria-hidden="true"></i> Gender: <span class="float-end">Male</span>
                                                         </h4>
                                                         <h4 class="text-capitalize text-white w-100 my-3">
-                                                            <i class="fa fa-phone-square" aria-hidden="true"></i> Số điện thoại: <span class="float-end">(+84) 943 144 178</span>
+                                                            <i class="fa fa-phone-square" aria-hidden="true"></i> Phone number: <span class="float-end">(+84) 943 144 178</span>
                                                         </h4>
                                                         <h4 class="text-capitalize text-white w-100 my-3">
                                                             <i class="fa fa-envelope" aria-hidden="true"></i> Email: <span class="float-end">ZiTech.Dev@gmail.com</span>
                                                         </h4>
                                                         <h4 class="text-capitalize text-white w-100 my-3">
-                                                            <i class="fa fa-map" aria-hidden="true"></i> Địa chỉ: <span class="float-end">441/42 Điện Biên Phủ, P.25, quận Bình Thạnh, TP.HCM</span>
+                                                            <i class="fa fa-map" aria-hidden="true"></i> Address: <span class="float-end">441/42 Đien Bien Phu, ward 25, Binh Thanh district, HCM city</span>
                                                         </h4>
                                                         <h4 class="text-capitalize text-white w-100 my-3">
                                                             <i class="fa fa-globe" aria-hidden="true"></i> Website: <a class="float-end" href="https://zitechdev.com/" target="_blank">zitechdev.com</a>
                                                         </h4>
                                                 </div>
                                                 <div class="text-center mt-5">
-                                                    <a class="btn btn-primary shadow rounded m-1" href="assets/file/Nguyen-Ngoc-Hieu-CV.pdf" download="Nguyen-Ngoc-Hieu-CV.pdf"><i class="fa fa-download" aria-hidden="true"></i> CV PDF</a>
-                                                    <a class="btn btn-primary shadow rounded m-1" href="assets/file/Nguyen-Ngoc-Hieu-Transcript.pdf" target="_blank"><i class="fa fa-list-alt" aria-hidden="true"></i> Yêu cầu bảng điểm</a>
+                                                    <a class="btn btn-primary shadow rounded m-1" href="../assets/file/Nguyen-Ngoc-Hieu-CV.pdf" download="Nguyen-Ngoc-Hieu-CV.pdf"><i class="fa fa-download" aria-hidden="true"></i> CV PDF</a>
+                                                    <a class="btn btn-primary shadow rounded m-1" href="../assets/file/Nguyen-Ngoc-Hieu-Transcript.pdf" target="_blank"><i class="fa fa-list-alt" aria-hidden="true"></i> Transcript</a>
                                                 </div>
                                             </div>
                                             <div class="col-2"></div>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 p-0 zi-mask-1 d-none d-xl-block">
-                                        <img class="img-fluid zi-opacity-2" src="assets/img/slider-1.jpeg" alt="illustration slide 1">
+                                        <img class="img-fluid zi-opacity-2" src="../assets/img/slider-1.jpeg" alt="illustration slide 1">
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="zi-slide px-5 d-flex">
+                                <table class="table table-bordered align-self-center">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Review myself</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="w-50">Advantages</th>
+                                            <th class="w-50">Disadvantages</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>I like to observe and listen, think clearly before problems.</td>
+                                            <td>Sometimes thinking a little too wide leads to unnecessary rambling.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pretty perfectionist in coding.</td>
+                                            <td>Sometimes being too perfectionist, not satisfied with what has been done, so takes time.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Honest, hardworking, able to withstand pressure.</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -203,8 +254,9 @@
                                     <div class="zi-quote">
                                             <div class="content-inner">
                                                 <h2 class="show-text mt-5"></h2> <!-- Place Typed Display -->
-                                                <div class="typed-text" hidden>"Nếu cứ đứng mãi trên vai người khổng lồ. Khi người khổng lồ chết ta vẫn là kẻ tí hon! Sao không tự mình làm người khổng lồ? Khó nhưng chưa chắc là không thể."</div>
+                                                <div class="typed-text" hidden>"If you keep standing on the shoulders of giants. When the giant dies, you are still the little one! Why not be a giant yourself? Difficult but not necessarily impossible."</div>
                                             </div>
+
                                             <div class="zi-clock">
                                                 <h3 id="clock" onload="showTime()"></h3>                                    
                                             </div>
@@ -228,6 +280,7 @@
                                             <a class="social-icon m-1" href="https://github.com/zi1611061206" target="_blank"><i class="fab fa-github"></i></a>
                                             <a class="social-icon m-1" href="https://www.youtube.com/channel/UCi0aeFqCM7PDf1QPltsS4gw" target="_blank"><i class="fab fa-youtube"></i></a>
                                             <a class="social-icon m-1" href="https://www.instagram.com/zitech.dev/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                            <a class="social-icon m-1" href="https://stackoverflow.com/users/16192357/zitechdev" target="_blank"><i class="fab fa-stack-overflow"></i></a>
                                         </div>
                                         <div class="d-block h-100 py-5">
                                             <iframe 
@@ -243,11 +296,11 @@
                     <!-- Left and right controls -->
                     <a class="carousel-control-prev zi-prev" href="#myCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Trước</span>
+                        <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next zi-next" href="#myCarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Sau</span>
+                        <span class="sr-only">Next</span>
                     </a>
                 </div>
 
@@ -257,18 +310,18 @@
         <!-- career-goals-->
         <section class="resume-section" id="page-2">
             <div class="resume-section-content">
-                <h2 class="mb-5">Mục tiêu</h2>
+                <h2 class="mb-5">Career Objectives</h2>
                 <div class="row">
                     <div class="col-md-6 col-sm-12 mb-3">
                         <div class="zi-card-text-horizontal">
-                            <h3 class="zi-title">Ngắn hạn</h3>
-                            <p class="zi-content">Được làm việc trong môi trường chuyên nghiệp, tiếp thu kinh nghiệm và được đào tạo chuyên sâu về kỹ năng, nghiệp vụ.</p>
+                            <h3 class="zi-title">Immediate objectives</h3>
+                            <p class="zi-content">Looking forward to having the opportunity to work in a friendly and professional environment. First to ensure a life, take care of the family. The next step is to find real combat opportunities, develop myself, and prove my ability and value to the company.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 mb-3">
                         <div class="zi-card-text-horizontal">
-                            <h3 class="zi-title">Dài hạn</h3>
-                            <p class="zi-content">Trau dồi về kỹ năng mềm cũng như kiến thức chuyên môn, đảm nhiệm nhiều vị trí công việc khác nhau và mang lại giá trị thiết thực cho công ty, hoàn thiện kỹ năng quản trị, trở thành Team Leader sau 1 - 2 năm hoặc các vị trí cao hơn.</p>
+                            <h3 class="zi-title">Long-term objectives</h3>
+                            <p class="zi-content">I have a dream to elevate the country's technological position and create breakthrough products. To do that, I need to overcome the inherent weaknesses in thinking, accumulate more knowledge, skills, experience and a good team. Frankly, I have my own ambition and strive for the goal of achieving future achievement and standing in the right position with my qualifications.</p>
                         </div>
                     </div>
                 </div>
@@ -278,16 +331,16 @@
         <!-- education-->
         <section class="resume-section" id="page-3">
             <div class="resume-section-content">
-                <h2 class="mb-5">Học vấn</h2>
+                <h2 class="mb-5">Education</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">Đại học Công nghệ thành phố Hồ Chí Minh</h3>
-                        <div class="subheading mb-3">Đại học chính quy</div>
-                        <div>Công nghệ thông tin - Công nghệ phần mềm</div>
+                        <h3 class="mb-0">Ho Chi Minh city University of Technology</h3>
+                        <div class="subheading mb-3">Formal university</div>
+                        <div>Information technology - Software technology</div>
                         <p>GPA: 3.0</p>
-                        <img class="zi-logo-square" src="assets/img/hutech-logo.png" alt="Hutech University Logo">
+                        <img class="zi-logo-square" src="../assets/img/hutech-logo.png" alt="Hutech University Logo">
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">09/2016 - Nay</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary">09/2016 - Now</span></div>
                 </div>
             </div>
         </section>
@@ -295,9 +348,9 @@
         <!-- advanced-skills-->
         <section class="resume-section" id="page-4">
             <div class="resume-section-content">
-                <h2 class="mb-5">Kỹ năng chuyên môn</h2>
-                <div class="subheading mb-3" id="page-4-1">Ngôn ngữ (Lập trình - Đánh dấu - Định kiểu - Truy vấn)</div>
+                <h2 class="mb-5">Specialized Skills</h2>
 
+                <div class="subheading mb-3" id="page-4-1">Programming languages</div>
                 <div class="zi-programing-language row d-flex justify-content-center">
                     
                     <div class="bar-2 col-lg-6">
@@ -325,6 +378,19 @@
                     </div>
                     
                     <div class="bar-2 col-lg-6">
+                        <span class="text-2">Js</span>
+                        <div class="percent-2">
+                            <div class="progress-2" aria-valuenow='60'></div>
+                        </div>
+                        <span class="value-2">60%</span>
+                    </div>
+
+                </div>
+                
+                <div class="subheading mb-3" id="page-4-1">Markup & style languages</div>
+                <div class="zi-programing-language row d-flex justify-content-center">
+                    
+                    <div class="bar-2 col-lg-6">
                         <span class="text-2">Html</span>
                         <div class="percent-2">
                             <div class="progress-2" aria-valuenow='70'></div>
@@ -339,14 +405,11 @@
                         </div>
                         <span class="value-2">60%</span>
                     </div>
-                    
-                    <div class="bar-2 col-lg-6">
-                        <span class="text-2">Js</span>
-                        <div class="percent-2">
-                            <div class="progress-2" aria-valuenow='60'></div>
-                        </div>
-                        <span class="value-2">60%</span>
-                    </div>
+
+                </div>
+                
+                <div class="subheading mb-3" id="page-4-1">Query languages</div>
+                <div class="zi-programing-language row d-flex justify-content-center">
                     
                     <div class="bar-2 col-lg-6">
                         <span class="text-2">sql</span>
@@ -366,93 +429,93 @@
 
                 </div>
 
-                <div class="subheading mb-3" id="page-4-2">Công cụ</div>
+                <div class="subheading mb-3" id="page-4-2">IDE & Version Control Tools</div>
 
                 <div class="row d-flex justify-content-center">
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/visual-studio-logo.png" alt="Microsoft Visual Studio Logo">
-                        <h3 class="name-3">Visual Studio</h3>
-                        <h3 class=price-3>Visual Studio</h3>
+                        <img class="img-3" src="../assets/img/visual-studio-logo.png" alt="Microsoft Visual Studio Logo">
+                        <h5 class="name-3">Visual Studio</h5>
+                        <h5 class=price-3>Visual Studio</h5>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/visual-studio-code-logo.png" alt="Microsoft Visual Studio Code Logo">
-                        <h3 class="name-3">Visual Studio Code</h3>
-                        <h3 class=price-3>Visual Studio Code</h3>
+                        <img class="img-3" src="../assets/img/visual-studio-code-logo.png" alt="Microsoft Visual Studio Code Logo">
+                        <h5 class="name-3">Visual Studio Code</h5>
+                        <h5 class=price-3>Visual Studio Code</h5>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/android-studio-logo.png" alt="Android Studio Logo">
-                        <h3 class="name-3">Android Studio</h3>
-                        <h3 class=price-3>Android Studio</h3>
+                        <img class="img-3" src="../assets/img/android-studio-logo.png" alt="Android Studio Logo">
+                        <h5 class="name-3">Android Studio</h5>
+                        <h5 class=price-3>Android Studio</h5>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/eclipse-logo.png" alt="Eclipse Logo">
-                        <h3 class="name-3">Eclipse</h3>
-                        <h3 class=price-3>Eclipse</h3>
+                        <img class="img-3" src="../assets/img/eclipse-logo.png" alt="Eclipse Logo">
+                        <h5 class="name-3">Eclipse</h5>
+                        <h5 class=price-3>Eclipse</h5>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/sql-server-logo.png" alt="Microsoft SQL Server (SSMS) Logo">
-                        <h3 class="name-3">SQL Server</h3>
-                        <h3 class=price-3>SQL Server</h3>
+                        <img class="img-3" src="../assets/img/sql-server-logo.png" alt="Microsoft SQL Server (SSMS) Logo">
+                        <h5 class="name-3">SQL Server</h5>
+                        <h5 class=price-3>SQL Server</h5>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/mysql-workbench-logo.png" alt="MySQL Workbench Logo">
-                        <h3 class="name-3">MySQL</h3>
-                        <h3 class=price-3>MySQL</h3>
+                        <img class="img-3" src="../assets/img/mysql-workbench-logo.png" alt="MySQL Workbench Logo">
+                        <h5 class="name-3">MySQL</h5>
+                        <h5 class=price-3>MySQL</h5>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/unity-logo.png" alt="Unity3D Logo">
-                        <h3 class="name-3">Unity</h3>
-                        <h3 class=price-3>Unity</h3>
+                        <img class="img-3" src="../assets/img/unity-logo.png" alt="Unity3D Logo">
+                        <h5 class="name-3">Unity</h5>
+                        <h5 class=price-3>Unity</h5>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/wordpress-logo.png" alt="Wordpress Logo">
-                        <h3 class="name-3">Wordpress</h3>
-                        <h3 class=price-3>Wordpress</h3>
+                        <img class="img-3" src="../assets/img/wordpress-logo.png" alt="Wordpress Logo">
+                        <h5 class="name-3">Wordpress</h5>
+                        <h5 class=price-3>Wordpress</h5>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/github-logo.png" alt="Github Logo">
-                        <h3 class="name-3">Github</h3>
-                        <h3 class=price-3>Github</h3>
+                        <img class="img-3" src="../assets/img/github-logo.png" alt="Github Logo">
+                        <h5 class="name-3">Github</h5>
+                        <h5 class=price-3>Github</h5>
                         <div class="circle-3"></div>
                     </div>
                     
                     <div class="card-3">
-                        <img class="img-3" src="assets/img/turtoise-svn-logo.png" alt="Turtoise SVN Logo">
-                        <h3 class="name-3">Turtoise SVN</h3>
-                        <h3 class=price-3>Turtoise SVN</h3>
+                        <img class="img-3" src="../assets/img/turtoise-svn-logo.png" alt="Turtoise SVN Logo">
+                        <h5 class="name-3">Turtoise SVN</h5>
+                        <h5 class=price-3>Turtoise SVN</h5>
                         <div class="circle-3"></div>
                     </div>
 
                 </div>
 
-                <div class="subheading" id="page-4-3">Công nghệ</div>
+                <div class="subheading" id="page-4-3">Technologies & Platforms</div>
 
                 <div class="mb-3">
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Windows Form
+                            .Net Framework, Entity Framework, Spring Boot
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            .Net Framework, Entity Framework, Spring Boot
+                            ASP.NET Core, ASP.NET MVC, LINQ to SQL
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -460,11 +523,11 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            ASP.NET Core
+                            Restful API
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Restful API
+                            Windows Form
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -477,21 +540,29 @@
                     </ul>
                 </div>
 
-                <div class="subheading">Mô hình - Kiến trúc</div>
+                <div class="subheading">Knowledges</div>
 
                 <div class="mb-3">
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile - Scrum
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            N - Layers
+                            Have a good background in OOP
                         </li>
                         <li hidden>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Microservices
+                            Knowledge of Design Pattern, SOLID principles, Dependency Injection, ...
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Used to work in Agile - Scrum process
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Ability to analyze and design software systems, design databases
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Grasp the foundation how to organize source code, how to write clean code
                         </li>
                     </ul>
                 </div>
@@ -502,7 +573,7 @@
         <!-- soft-skills-->
         <section class="resume-section" id="page-5">
             <div class="resume-section-content">
-                <h2 class="mb-5">Kỹ năng mềm</h2>
+                <h2 class="mb-5">Soft Skills</h2>
                 
                 <div class="row d-flex justify-content-center">
                     
@@ -517,7 +588,7 @@
                                     <h2>80<span>%</span></h2>
                                 </div>
                             </div>
-                            <h4 class="text-1">Làm việc nhóm</h4>
+                            <h4 class="text-1">Teamwork</h4>
                         </div>
                     </div>
                     
@@ -532,7 +603,7 @@
                                     <h2>80<span>%</span></h2>
                                 </div>
                             </div>
-                            <h4 class="text-1">Phân tích tổng hợp</h4>
+                            <h4 class="text-1">Synthetic & analysis</h4>
                         </div>
                     </div>
                     
@@ -547,7 +618,7 @@
                                     <h2>75<span>%</span></h2>
                                 </div>
                             </div>
-                            <h4 class="text-1">Tiếng Anh</h4>
+                            <h4 class="text-1">English</h4>
                         </div>
                     </div>
                     
@@ -562,7 +633,7 @@
                                     <h2>70<span>%</span></h2>
                                 </div>
                             </div>
-                            <h4 class="text-1">Thuyết trình</h4>
+                            <h4 class="text-1">Presentation skills</h4>
                         </div>
                     </div>
 
@@ -574,37 +645,37 @@
         <!-- professional-experiences-->
         <section class="resume-section" id="page-6">
             <div class="resume-section-content">
-                <h2 class="mb-5">Kinh nghiệm chuyên môn</h2>
+                <h2 class="mb-5">Specialized Experiences</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">FPT Software Hồ Chí Minh</h3>
-                        <div class="subheading mb-3">Thực tập sinh</div>
-                        <img class="zi-logo-rectangle" src="assets/img/fpt-software-logo.png" alt="FPT Software Logo">
-                        <img class="zi-logo-rectangle" src="assets/img/fpt-software-academy-logo.png" alt="FPT Software Academy Logo">
-                        <div>Công việc đảm nhận: Module ứng dụng web quản lý của dự án (bảo mật).</div>
-                        <div>Vị trí đảm nhận: Team Leader (7 thành viên).</div>
-                        <div>Ngôn ngữ: Java</div>
-                        <div>Nền tảng: Spring Boot - Spring Framework.</div>
-                        <div>Công cụ: Eclipse, MySQL, Postman, Turtoise SVN.</div>
-                        <div>Quy trình phát triển: Agile - Scrum.</div>
-                        <div>Kết quả đánh giá: 9/10. ( <a href="assets/file/fpt-internship-result-note.jpg" data-lightbox="evidence" data-title="fpt-internship-result-note">Minh chứng</a> )</div>
-                        <div>Thành quả đạt được:</div>
+                        <h3 class="mb-0">FPT Software Ho Chi Minh</h3>
+                        <div class="subheading mb-3">Intern</div>
+                        <img class="zi-logo-rectangle" src="../assets/img/fpt-software-logo.png" alt="FPT Software Logo">
+                        <img class="zi-logo-rectangle" src="../assets/img/fpt-software-academy-logo.png" alt="FPT Software Academy Logo">
+                        <div>Work undertaken: Web management application module of the project (security).</div>
+                        <div>Position taken: Team Leader (7 members).</div>
+                        <div>Language: Java</div>
+                        <div>Framework: Spring Boot - Spring Framework.</div>
+                        <div>Tools: Eclipse, MySQL, Postman, Turtoise SVN.</div>
+                        <div>Development process: Agile - Scrum.</div>
+                        <div>Result of evaluation: 9/10. ( <a href="../assets/file/fpt-internship-result-note.jpg" data-lightbox="evidence" data-title="fpt-internship-result-note">evidences</a> )</div>
+                        <div>Achievements:</div>
                         <ul class="fa-ul mb-0">
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Nâng cao kiến thức về lập trình hướng đối tượng nói chung, ngôn ngữ Java, nền tảng Spring Framework, Web API.
+                                Improve knowledge about object-oriented programming in general, Java language, Spring Framework platform, Web API.
                             </li>
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Quy trình nghiêm ngặt nâng cao trách nhiệm, tính tự giác cá nhân.
+                                Rigorous process enhances personal responsibility and self-discipline.
                             </li>
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Được học hỏi các kinh nghiệm về lãnh đạo, tổ chức, lập kế hoạch, quản lý thời gian, quy trình triển khai dự án, kỹ năng làm việc nhóm...
+                                Gain experience in leadership, organization, planning, time management, project implementation process, teamwork skills, ...
                             </li>
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Được đào tại kỹ năng viết Email, ISMS, quản trị rủi ro trong công việc.
+                                Trained in email writing, ISMS, risk management at work.
                             </li>
                             <li>
                                 <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
@@ -621,19 +692,15 @@
         <!-- projects-->
         <section class="resume-section" id="page-7">
             <div class="resume-section-content">
-                <h2 class="mb-5">Dự án</h2>
+                <h2 class="mb-5">Projects</h2>
                 <div class="row d-flex justify-content-center">
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
-                            <h4 class="name-1">Ứng dụng Quản lý quán cà phê ZiCoffee</h4>
+                            <h4 class="name-1">Cafe management application ZiCoffee</h4>
                             <h5 class=price-1>Desktop Application</h5>
-                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
-                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
-                            </a>
                             <p class="description-1">
                                 <ul class="list-inline">
                                     <li><i class="fas fa-check"></i> Windows Forms (.NET Framework)</li>
@@ -643,6 +710,11 @@
                                     <li hidden><i class="fas fa-check"></i> DevExpress</li>
                                     <li hidden><i class="fas fa-check"></i> N - Layers</li>
                                     <li hidden><i class="fas fa-check"></i> Crystal Report</li>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
+                                    </li>
                                 </ul>
                             </p>
                         </div>
@@ -650,20 +722,21 @@
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
-                            <h4 class="name-1">Ứng dụng Gọi món quán cà phê ZiOrder</h4>
+                            <h4 class="name-1">Cafe ordering application ZiOrder</h4>
                             <h5 class=price-1>Mobile Application</h5>
-                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
-                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
-                            </a>
                             <p class="description-1">
                                 <ul class="list-inline">
                                     <li><i class="fas fa-check"></i> Android - Java</li>
-                                    <li><i class="fas fa-check"></i> Đồng bộ với ZiCoffee qua IP mạng Wifi</li>
+                                    <li><i class="fas fa-check"></i> Synchronize with ZiCoffee via Wifi network IP</li>
                                     <li><i class="fas fa-check"></i> QR Code</li>
                                     <li hidden><i class="fas fa-check"></i> Material Design</li>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
+                                    </li>
                                 </ul>
                             </p>
                         </div>
@@ -671,14 +744,10 @@
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
-                            <h4 class="name-1">Blog chia sẻ kiến thức ZiTechDev</h4>
+                            <h4 class="name-1">Knowledge sharing Blog ZiTechDev</h4>
                             <h5 class=price-1>Web Application</h5>
-                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
-                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
-                            </a>
                             <p class="description-1">
                                 <ul class="list-inline">
                                     <li><i class="fas fa-check"></i> ASP.NET MVC (.NET Core)</li>
@@ -686,6 +755,11 @@
                                     <li><i class="fas fa-check"></i> SQL</li>
                                     <li><i class="fas fa-check"></i> Entity Framework</li>
                                     <li><i class="fas fa-check"></i> Identity Server</li>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
+                                    </li>
                                 </ul>
                             </p>
                         </div>
@@ -693,14 +767,10 @@
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
-                            <h4 class="name-1">Dự án thực tập FPT Software HCM</h4>
+                            <h4 class="name-1">Internship project FPT Software HCM</h4>
                             <h5 class=price-1>Web Application</h5>
-                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
-                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
-                            </a>
                             <p class="description-1">
                                 <ul class="list-inline">
                                     <li><i class="fas fa-check"></i> Spring Boot (Spring Framework)</li>
@@ -708,6 +778,11 @@
                                     <li><i class="fas fa-check"></i> MySQL</li>
                                     <li><i class="fas fa-check"></i> JSTL</li>
                                     <li><i class="fas fa-check"></i> Spring Security</li>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
+                                    </li>
                                 </ul>
                             </p>
                         </div>
@@ -715,20 +790,21 @@
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
-                            <h4 class="name-1">Mô hình nhận diện cảm xúc dựa trên khuôn mặt ZiEmotionFacialRecognition</h4>
+                            <h4 class="name-1">Emotion recognition model based on face ZiEmotionFacialRecognition</h4>
                             <h5 class=price-1>Machine Learning Research</h5>
-                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
-                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
-                            </a>
                             <p class="description-1">
                                 <ul class="list-inline">
                                     <li><i class="fas fa-check"></i> Convolutional neural network</li>
-                                    <li><i class="fas fa-check"></i> Kỹ thuật xử lý ảnh</li>
+                                    <li><i class="fas fa-check"></i> Image processing techniques</li>
                                     <li><i class="fas fa-check"></i> Facial Detected</li>
                                     <li><i class="fas fa-check"></i> Mini-Xception model </li>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
+                                    </li>
                                 </ul>
                             </p>
                         </div>
@@ -736,17 +812,18 @@
                     
                     <div class="card-1">
                         <div class="img-1">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gd7iKwVPecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                         <div class="content-1">
                             <h4 class="name-1">Game ZiFlappyBird / ZiHappySanta (Funny)</h4>
                             <h5 class=price-1>2D</h5>
-                            <a href="assets/img/yt-test.jpeg" data-lightbox="ZiCoffe" data-title="ZiCoffe">
-                                <img class="thumnail-1" src="assets/img/yt-test.jpeg" alt="">
-                            </a>
                             <p class="description-1">
                                 <ul class="list-inline">
                                     <li><i class="fas fa-check"></i> Unity3D - C#</li>
+                                    <li class="zi-demo-icons">
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                                        <a href="#"><i class="fa fa-image"></i> </a>
+                                    </li>
                                 </ul>
                             </p>
                         </div>
@@ -756,28 +833,47 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- contact-->
+        <!-- activities-->
         <section class="resume-section" id="page-8">
             <div class="resume-section-content">
-                <h2 class="mb-5">Liên hệ</h2>
+                <h2 class="mb-5">Activities</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Voluntary blood donation day</h3>
+                        <div class="subheading mb-3">Ho Chi Minh city University of Technology (HUTECH - base A)</div>
+                        <div>475A Dien Bien Phu, ward 25, Binh Thanh district, Ho Chi Minh city</div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">28/11/2017</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Volunteer of the mobile team to support the prevention of Covid-19</h3>
+                        <div class="subheading mb-3">Binh Thanh District Union ( <a href="../show-evidence.html" target="_blank">evidences</a> )</div>
+                        <div>134 Le Van Duyet, ward 3, Binh Thanh district, Ho Chi Minh city</div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">28/07/2021</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- contact-->
+        <section class="resume-section" id="page-9">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Contact</h2>
                 <div class="row">
 
                     <div class="col-md-6 text-center">
                         <a class="row m-2 bg-success text-decoration-none d-flex justify-content-center rounded-3" href="mailto:zitech.dev@gmail.com">
-                            <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="assets/img/email-img.png" alt="Mail to">
-                            <h3 class="col-md-6 mt-5 mt-sm-1">Gửi email cho tôi</h3>
+                            <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="../assets/img/email-img.png" alt="Mail to">
+                            <h3 class="col-md-6 mt-5 mt-sm-1">Send email to me</h3>
                         </a>
-                        <a class="row m-2 bg-info text-decoration-none d-flex justify-content-center rounded-3" href="assets/qr/fb-qr.png" data-lightbox="qrcode" data-title="Facebook QR Code">
-                            <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="assets/qr/fb-qr.png" alt="Facebook QR Code">
+                        <a class="row m-2 bg-primary text-decoration-none d-flex justify-content-center rounded-3" href="tel:0943144178">
+                            <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="../assets/img/phone-img.png" alt="Make a phone call">
+                            <h3 class="col-md-6 mt-5 mt-sm-1">Call me</h3>
+                        </a>
+                        <a class="row m-2 bg-info text-decoration-none d-flex justify-content-center rounded-3" href="../assets/qr/fb-qr.png" data-lightbox="qrcode" data-title="Facebook QR Code">
+                            <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="../assets/qr/fb-qr.png" alt="Facebook QR Code">
                             <h3 class="col-md-6 mt-5 mt-sm-1">Facebook</h3>
-                        </a>
-                        <a class="row m-2 bg-primary text-decoration-none d-flex justify-content-center rounded-3" href="assets/qr/metap-qr.png" data-lightbox="qrcode" data-title="Metap QR Code">
-                            <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="assets/qr/metap-qr.png" alt="Metap QR Code">
-                            <h3 class="col-md-6 mt-5 mt-sm-1">Metap</h3>
-                        </a>
-                        <a class="row m-2 bg-secondary text-decoration-none d-flex justify-content-center rounded-3" href="assets/qr/phone-qr.png" data-lightbox="qrcode" data-title="Phone QR Code">
-                            <img class="zi-qr col-md-6 rounded-2 img-thumbnail m-1" src="assets/qr/phone-qr.png" alt="Phone QR Code">
-                            <h3 class="col-md-6 mt-5 mt-sm-1">Số điện thoại</h3>
                         </a>
                     </div>
 
@@ -803,13 +899,13 @@
     <!-- Typed Effect -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Vanilla Tilt -->
-    <script type="text/javascript" src="lib/vanila-tilt/vanilla-tilt.js"></script>
+    <script src="../lib/vanila-tilt/vanilla-tilt.js" type="text/javascript"></script>
     <!-- LightBox -->
-    <script src="lib/lightbox2-dev/src/js/lightbox.js"></script>
+    <script src="../lib/lightbox2-dev/src/js/lightbox.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <script src="js/my-scripts.js"></script>
-    <script src="js/scroll-by-jquery-example.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/my-scripts.js"></script>
+    <script src="../js/scroll-by-jquery-example.js"></script>
     
 </body>
 
