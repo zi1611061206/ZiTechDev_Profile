@@ -1,14 +1,13 @@
-//https://script.google.com/macros/s/AKfycbys4nX2gZmFMsAmlsY_A6qfZDaihXAaREDwYTNQo-FcM8AMm-0/exec
+//https://tuandc.com/lap-trinh/huong-dan-tao-from-gui-du-lieu-tu-website-len-google-sheet-khong-dung-google-forms.html?fbclid=IwAR2IuKnUXZjW5IxbB0SBjdNuWXKr8Yi74me90YBWiYoJn4ihxOdKZ3zxKqo
 $(document).ready(function () {
+    
     var ipValue = getIP();
     function getIP() {
         if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();
         else xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-
-        xmlhttp.open("GET", "http://api.hostip.info/get_html.php", false);
+        xmlhttp.open("GET", "https://api.ipify.org?format=json", false);
         xmlhttp.send();
-
-        return xmlhttp.responseText;
+        return xmlhttp.responseText.split('"')[3];
     }
 
     var submit = $('#logger-submit');
