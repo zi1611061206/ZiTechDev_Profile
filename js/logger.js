@@ -1,7 +1,7 @@
 //https://tuandc.com/lap-trinh/huong-dan-tao-from-gui-du-lieu-tu-website-len-google-sheet-khong-dung-google-forms.html?fbclid=IwAR2IuKnUXZjW5IxbB0SBjdNuWXKr8Yi74me90YBWiYoJn4ihxOdKZ3zxKqo
 $(document).ready(function () {
-    
-    var ipValue = getIP();
+
+    let ipValue = getIP();
     function getIP() {
         if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();
         else xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
@@ -10,19 +10,18 @@ $(document).ready(function () {
         return xmlhttp.responseText.split('"')[3];
     }
 
-    var submit = $('#logger-submit');
     function setLog(actionValue) {
-        var date = new Date();
-        var dateValue = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear();
-        var timeValue = date.getHours() + 'h' + date.getMinutes() + 'm' + date.getSeconds() + 's';
+        let date = new Date();
+        let dateValue = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear();
+        let timeValue = date.getHours() + 'h' + date.getMinutes() + 'm' + date.getSeconds() + 's';
         $('#logger-date').val(dateValue);
         $('#logger-time').val(timeValue);
         $('#logger-ip').val(ipValue);
         $('#logger-action').val(actionValue);
-        submit.click();
+        submitData();
     }
 
-    submit.click(function () {
+    function submitData() {
         var data = $('#logger-form').serialize();
         $.ajax({
             type: 'GET',
@@ -39,7 +38,12 @@ $(document).ready(function () {
             }
         });
         return false;
+    }
+
+    setLog('page load');
+    $('a').on('click', function (e) {
+        let content = $(this).attr('href');
+        setLog(content);
     });
 
-    $('body').load(setLog('page load'));
 });
