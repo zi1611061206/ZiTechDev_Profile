@@ -204,8 +204,12 @@
                                                         </h4>
                                                 </div>
                                                 <div class="text-center mt-5">
-                                                    <a class="btn btn-primary shadow rounded m-1" href="../assets/file/Nguyen-Ngoc-Hieu-CV.pdf" download="Nguyen-Ngoc-Hieu-CV.pdf"><i class="fa fa-download" aria-hidden="true"></i> CV PDF</a>
-                                                    <a class="btn btn-primary shadow rounded m-1" href="../assets/file/Nguyen-Ngoc-Hieu-Transcript.pdf" target="_blank"><i class="fa fa-list-alt" aria-hidden="true"></i> Transcript</a>
+                                                    <a id="btnCV" class="btn btn-primary shadow rounded m-1" href="../assets/file/Nguyen-Ngoc-Hieu-CV.pdf" download="Nguyen-Ngoc-Hieu-CV.pdf"><i class="fa fa-download" aria-hidden="true"></i> CV PDF</a>
+                                                    <button id="btnTranscript" type="button"
+                                                        class="btn btn-primary shadow rounded m-1" data-toggle="modal"
+                                                        data-target="#transcript-modal">
+                                                        <i class="fa fa-list-alt" aria-hidden="true"></i> Transcript
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="col-2"></div>
@@ -897,6 +901,37 @@
         <input id="logger-action" type="text" name="action">
     </form>
 
+    <!-- Transcript Request -->
+    <div class="modal fade" id="transcript-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <form id="transcript-form">
+                        <div class="form-group">
+                            <input id="transcript-date" type="text" class="form-control" name="date" hidden>
+                        </div>
+                        <div class="form-group">
+                            <input id="transcript-time" type="text" class="form-control" name="time" hidden>
+                        </div>
+                        <div class="form-group">
+                            <input id="transcript-name" type="text" class="form-control" name="name" placeholder="What should I call you?" maxlength="50" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="transcript-email" type="email" class="form-control" name="email" placeholder="What email address do I need to send my transcripts to?" maxlength="100" required>
+                        </div>
+                        <div class="form-group d-flex justify-content-between">
+                            <button id="transcript-cancel" type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button id="transcript-submit" type="button" class="btn btn-success">Send Request</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap 4.0 JS-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -914,6 +949,7 @@
     <script src="../js/my-scripts.js"></script>
     <script src="../js/scroll-by-jquery-example.js"></script>
     <script src="../js/logger.js"></script>
+    <script src="../js/transcript.js"></script>
     
 </body>
 
