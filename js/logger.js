@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     function setLog(actionValue) {
         let date = new Date();
-        let dateValue = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear();
+        let dateValue = date.getDate() + '-' + (parseInt(date.getMonth()) + 1) + '-' + date.getFullYear();
         let timeValue = date.getHours() + 'h' + date.getMinutes() + 'm' + date.getSeconds() + 's';
         $('#logger-date').val(dateValue);
         $('#logger-time').val(timeValue);
